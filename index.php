@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-xl">
-                <a class="navbar-brand text-light" href="./index.html">Navbar</a>
+                <a class="navbar-brand text-light" href="./index.php">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,14 +20,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link text-light" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link text-light" aria-current="page" href="./index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="./about_us.html">About us</a>
+                            <a class="nav-link text-light" href="./pages/about_us.php">About us</a>
                         </li>
                     </ul>
-                    <a href="./login.html" class="btn btn-primary text-light me-2">Login</a>
-                    <a href="./register.html" class="btn text-light btn-outline-primary">Register</a>
+                    <a href="./pages/login.php" class="btn btn-primary text-light me-2">Login</a>
+                    <a href="./pages/register.php" class="btn text-light btn-outline-primary">Register</a>
                 </div>
             </div>
         </nav>

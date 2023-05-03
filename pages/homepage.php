@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/mcss.css">
 </head>
-
 <body class="d-flex flex-column h-100">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="check2" viewBox="0 0 16 16">
@@ -31,7 +28,7 @@
                 d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
         </symbol>
     </svg>
-
+    
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
         <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
             aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
@@ -79,7 +76,7 @@
             </li>
         </ul>
     </div>
-
+    
     <header class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0 shadow">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Company name</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
@@ -90,45 +87,46 @@
             aria-label="Search">
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="./account.html">Account</a>
+                <a class="nav-link px-3" href="./account.php">Account</a>
             </div>
         </div>
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="./index.html">Sign out</a>
+                <a class="nav-link px-3" href="../index.php">Sign out</a>
             </div>
         </div>
     </header>
-
+    
     <div class="container-fluid h-100">
         <div class="row h-100">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-body-tertiary sidebar collapse">
                 <div class="position-sticky pt-3 sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./homepage.html">
+                            <a class="nav-link active" aria-current="page" href="./homepage.php">
                                 <i class="bi bi-house"></i>
                                 <span data-feather="home" class="align-text-bottom mx-1"></span>
                                 Dashboard
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./lessons.html">
+                            <a class="nav-link" href="./lessons.php">
                                 <i class="bi bi-mortarboard"></i>
                                 <span data-feather="file" class="align-text-bottom mx-1"></span>
                                 Lessons
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./assement.html">
+                            <a class="nav-link" href="./assement.php">
                                 <i class="bi bi-book"></i>
                                 <span data-feather="shopping-cart" class="align-text-bottom mx-1"></span>
                                 Assessment
                             </a>
                         </li>
                     </ul>
-
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+    
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
                         <span>Saved reports</span>
                         <a class="link-secondary" href="#" aria-label="Add a new report">
                             <span data-feather="plus-circle" class="align-text-bottom"></span>
@@ -136,7 +134,7 @@
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="./calendar.php">
                                 <span data-feather="file-text" class="align-text-bottom"></span>
                                 Calendar
                             </a>
@@ -162,15 +160,15 @@
                     </ul>
                 </div>
             </nav>
-
+    
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Lessons</h1>
+                    <h1 class="h2">Dashboard</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
                         <div class="btn-group me-2">
-                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse"
-                                data-bs-target=".lsn" aria-expanded="false" aria-controls="row">View All</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
                         </div>
                         <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
                             <span data-feather="calendar" class="align-text-bottom"></span>
@@ -178,90 +176,140 @@
                         </button>
                     </div>
                 </div>
-                <!-- HERE -->
-                <h4>New select</h4>
-
-                <h4>Selection</h4>
-                <div class="container m-auto w-100">
-                    <div class="row">
-                        <div class="col">
-                            <div class="lsn-head btn btn-primary border border-0 text-start text-dark"
-                                data-bs-toggle="collapse" data-bs-target="#row" aria-expanded="false"
-                                aria-controls="row">Introduction to PHP</div>
-                        </div>
-                    </div>
-                    <div class="lsn row collapse mx-auto" id="row">
-                        <a href="./lesson.html" class="btn btn-secondary border border-0 rounded-0 text-start">
-                            <div class="lsn-data">What is PHP</div>
-                        </a>
-                        <div class="btn-secondary btn border border-0 text-start rounded-0">
-                            <div class="lsn-data">What is PHP</div>
-                        </div>
-                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
-                            <div class="lsn-data">What is PHP</div>
-                        </div>
-                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
-                            <div class="lsn-data">Understanding PHP</div>
-                        </div>
-                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
-                            <div class="lsn-data">How PHP is used</div>
-                        </div>
-                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
-                            <div class="lsn-data">Real World Applications</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="lsn-head btn btn-primary border border-0 text-start text-dark"
-                                data-bs-toggle="collapse" data-bs-target="#row1" aria-expanded="false"
-                                aria-controls="row">Introduction to PHP</div>
-                        </div>
-                    </div>
-                    <div class="lsn row collapse mx-auto" id="row1">
-                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
-                            <div class="lsn-data">What is PHP</div>
-                        </div>
-                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
-                            <div class="lsn-data">Understanding PHP</div>
-                        </div>
-                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
-                            <div class="lsn-data">How PHP is used</div>
-                        </div>
-                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
-                            <div class="lsn-data">Real World Applications</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="lsn-head btn btn-primary border border-0 text-start text-dark"
-                                data-bs-toggle="collapse" data-bs-target="#row2" aria-expanded="false"
-                                aria-controls="row">Introduction to PHP</div>
-                        </div>
-                    </div>
-                    <div class="lsn row collapse mx-auto" id="row2">
-                        <div class="row p-0 m-0">
-                            <div class="lsn-data">What is PHP</div>
-                        </div>
-                        <div class="row p-0 m-0">
-                            <div class="lsn-data">Understanding PHP</div>
-                        </div>
-                        <div class="row p-0 m-0">
-                            <div class="lsn-data">How PHP is used</div>
-                        </div>
-                        <div class="row p-0 m-0">
-                            <div class="lsn-data">Real World Applications</div>
-                        </div>
-                    </div>
+    
+                <h2>Announcements</h2>
+                <p>Balitang balita sa radyong sira</p>
+                <h2>Finished</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-primary table-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Header</th>
+                                <th scope="col">Header</th>
+                                <th scope="col">Header</th>
+                                <th scope="col">Header</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <td>1,001</td>
+                                <td>random</td>
+                                <td>data</td>
+                                <td>placeholder</td>
+                                <td>text</td>
+                            </tr>
+                            <tr>
+                                <td>1,002</td>
+                                <td>placeholder</td>
+                                <td>irrelevant</td>
+                                <td>visual</td>
+                                <td>layout</td>
+                            </tr>
+                            <tr>
+                                <td>1,003</td>
+                                <td>data</td>
+                                <td>rich</td>
+                                <td>dashboard</td>
+                                <td>tabular</td>
+                            </tr>
+                            <tr>
+                                <td>1,003</td>
+                                <td>information</td>
+                                <td>placeholder</td>
+                                <td>illustrative</td>
+                                <td>data</td>
+                            </tr>
+                            <tr>
+                                <td>1,004</td>
+                                <td>text</td>
+                                <td>random</td>
+                                <td>layout</td>
+                                <td>dashboard</td>
+                            </tr>
+                            <tr>
+                                <td>1,005</td>
+                                <td>dashboard</td>
+                                <td>irrelevant</td>
+                                <td>text</td>
+                                <td>placeholder</td>
+                            </tr>
+                            <tr>
+                                <td>1,006</td>
+                                <td>dashboard</td>
+                                <td>illustrative</td>
+                                <td>rich</td>
+                                <td>data</td>
+                            </tr>
+                            <tr>
+                                <td>1,007</td>
+                                <td>placeholder</td>
+                                <td>tabular</td>
+                                <td>information</td>
+                                <td>irrelevant</td>
+                            </tr>
+                            <tr>
+                                <td>1,008</td>
+                                <td>random</td>
+                                <td>data</td>
+                                <td>placeholder</td>
+                                <td>text</td>
+                            </tr>
+                            <tr>
+                                <td>1,009</td>
+                                <td>placeholder</td>
+                                <td>irrelevant</td>
+                                <td>visual</td>
+                                <td>layout</td>
+                            </tr>
+                            <tr>
+                                <td>1,010</td>
+                                <td>data</td>
+                                <td>rich</td>
+                                <td>dashboard</td>
+                                <td>tabular</td>
+                            </tr>
+                            <tr>
+                                <td>1,011</td>
+                                <td>information</td>
+                                <td>placeholder</td>
+                                <td>illustrative</td>
+                                <td>data</td>
+                            </tr>
+                            <tr>
+                                <td>1,012</td>
+                                <td>text</td>
+                                <td>placeholder</td>
+                                <td>layout</td>
+                                <td>dashboard</td>
+                            </tr>
+                            <tr>
+                                <td>1,013</td>
+                                <td>dashboard</td>
+                                <td>irrelevant</td>
+                                <td>text</td>
+                                <td>visual</td>
+                            </tr>
+                            <tr>
+                                <td>1,014</td>
+                                <td>dashboard</td>
+                                <td>illustrative</td>
+                                <td>rich</td>
+                                <td>data</td>
+                            </tr>
+                            <tr>
+                                <td>1,015</td>
+                                <td>random</td>
+                                <td>tabular</td>
+                                <td>information</td>
+                                <td>text</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </main>
         </div>
     </div>
-    <script src="./js/mjs.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
-
 </html>

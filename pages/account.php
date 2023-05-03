@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/custom.css">
+    <!-- <link rel="stylesheet" href="./css/mcss.css"> -->
+    <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body class="d-flex flex-column h-100">
@@ -164,148 +165,58 @@
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Dashboard</h1>
+                    <h1 class="h2">Account</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
                         <div class="btn-group me-2">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit Info</button>
                         </div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                        <button type="button" class="btn btn-sm btn-outline-danger">
                             <span data-feather="calendar" class="align-text-bottom"></span>
-                            This week
+                            Delete Account
                         </button>
                     </div>
                 </div>
-    
-                <h2>Announcements</h2>
-                <p>Balitang balita sa radyong sira</p>
-                <h2>Finished</h2>
-                <div class="table-responsive">
-                    <table class="table table-striped table-primary table-sm table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Header</th>
-                                <th scope="col">Header</th>
-                                <th scope="col">Header</th>
-                                <th scope="col">Header</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table-group-divider">
-                            <tr>
-                                <td>1,001</td>
-                                <td>random</td>
-                                <td>data</td>
-                                <td>placeholder</td>
-                                <td>text</td>
-                            </tr>
-                            <tr>
-                                <td>1,002</td>
-                                <td>placeholder</td>
-                                <td>irrelevant</td>
-                                <td>visual</td>
-                                <td>layout</td>
-                            </tr>
-                            <tr>
-                                <td>1,003</td>
-                                <td>data</td>
-                                <td>rich</td>
-                                <td>dashboard</td>
-                                <td>tabular</td>
-                            </tr>
-                            <tr>
-                                <td>1,003</td>
-                                <td>information</td>
-                                <td>placeholder</td>
-                                <td>illustrative</td>
-                                <td>data</td>
-                            </tr>
-                            <tr>
-                                <td>1,004</td>
-                                <td>text</td>
-                                <td>random</td>
-                                <td>layout</td>
-                                <td>dashboard</td>
-                            </tr>
-                            <tr>
-                                <td>1,005</td>
-                                <td>dashboard</td>
-                                <td>irrelevant</td>
-                                <td>text</td>
-                                <td>placeholder</td>
-                            </tr>
-                            <tr>
-                                <td>1,006</td>
-                                <td>dashboard</td>
-                                <td>illustrative</td>
-                                <td>rich</td>
-                                <td>data</td>
-                            </tr>
-                            <tr>
-                                <td>1,007</td>
-                                <td>placeholder</td>
-                                <td>tabular</td>
-                                <td>information</td>
-                                <td>irrelevant</td>
-                            </tr>
-                            <tr>
-                                <td>1,008</td>
-                                <td>random</td>
-                                <td>data</td>
-                                <td>placeholder</td>
-                                <td>text</td>
-                            </tr>
-                            <tr>
-                                <td>1,009</td>
-                                <td>placeholder</td>
-                                <td>irrelevant</td>
-                                <td>visual</td>
-                                <td>layout</td>
-                            </tr>
-                            <tr>
-                                <td>1,010</td>
-                                <td>data</td>
-                                <td>rich</td>
-                                <td>dashboard</td>
-                                <td>tabular</td>
-                            </tr>
-                            <tr>
-                                <td>1,011</td>
-                                <td>information</td>
-                                <td>placeholder</td>
-                                <td>illustrative</td>
-                                <td>data</td>
-                            </tr>
-                            <tr>
-                                <td>1,012</td>
-                                <td>text</td>
-                                <td>placeholder</td>
-                                <td>layout</td>
-                                <td>dashboard</td>
-                            </tr>
-                            <tr>
-                                <td>1,013</td>
-                                <td>dashboard</td>
-                                <td>irrelevant</td>
-                                <td>text</td>
-                                <td>visual</td>
-                            </tr>
-                            <tr>
-                                <td>1,014</td>
-                                <td>dashboard</td>
-                                <td>illustrative</td>
-                                <td>rich</td>
-                                <td>data</td>
-                            </tr>
-                            <tr>
-                                <td>1,015</td>
-                                <td>random</td>
-                                <td>tabular</td>
-                                <td>information</td>
-                                <td>text</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="card mb-3 border-0 rounded-0" style="max-width: 100%;">
+                    <div class="row g-0">
+                        <div class="col-auto">
+                            <img src="https://picsum.photos/200" class="float-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3>Full Name</h3>
+                                <h3>Contact</h3>
+                                <p>Balitang balita sa radyong sira</p>
+                                <h3>Biography</h3>
+                                <p>Balitang balita sa radyong sira</p>
+                            </div>
+                        </div>
+                        <div class="card-body border-0 pt-0">
+                            <h3>Links</h3>
+                            <p>Balitang balita sa radyong sira</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Show this if edit info true -->
+                <div class="card mb-3 border-0 rounded-0" style="max-width: 100%;">
+                    <div class="row g-0">
+                        <div class="col-auto">
+                            <img src="https://picsum.photos/200" class="float-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3>Full Name</h3>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Name"></textarea>
+                                <h3>Contact</h3>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Contact"></textarea>
+                                <h3>Biography</h3>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Biography"></textarea>
+                            </div>
+                        </div>
+                        <div class="card-body border-0 pt-0">
+                            <h3>Links</h3>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Links"></textarea>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>

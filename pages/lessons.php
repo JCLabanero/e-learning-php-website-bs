@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./css/mcss.css"> -->
-    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/mcss.css">
 </head>
+
 <body class="d-flex flex-column h-100">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="check2" viewBox="0 0 16 16">
@@ -29,7 +31,7 @@
                 d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
         </symbol>
     </svg>
-    
+
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
         <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
             aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
@@ -77,7 +79,7 @@
             </li>
         </ul>
     </div>
-    
+
     <header class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0 shadow">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Company name</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
@@ -88,46 +90,45 @@
             aria-label="Search">
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="./account.html">Account</a>
+                <a class="nav-link px-3" href="./account.php">Account</a>
             </div>
         </div>
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="./index.html">Sign out</a>
+                <a class="nav-link px-3" href="../index.php">Sign out</a>
             </div>
         </div>
     </header>
-    
+
     <div class="container-fluid h-100">
         <div class="row h-100">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-body-tertiary sidebar collapse">
                 <div class="position-sticky pt-3 sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./homepage.html">
+                            <a class="nav-link active" aria-current="page" href="./homepage.php">
                                 <i class="bi bi-house"></i>
                                 <span data-feather="home" class="align-text-bottom mx-1"></span>
                                 Dashboard
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./lessons.html">
+                            <a class="nav-link" href="./lessons.php">
                                 <i class="bi bi-mortarboard"></i>
                                 <span data-feather="file" class="align-text-bottom mx-1"></span>
                                 Lessons
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./assement.html">
+                            <a class="nav-link" href="./assement.php">
                                 <i class="bi bi-book"></i>
                                 <span data-feather="shopping-cart" class="align-text-bottom mx-1"></span>
                                 Assessment
                             </a>
                         </li>
                     </ul>
-    
-                    <h6
-                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
                         <span>Saved reports</span>
                         <a class="link-secondary" href="#" aria-label="Add a new report">
                             <span data-feather="plus-circle" class="align-text-bottom"></span>
@@ -135,7 +136,7 @@
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="./calendar.html">
+                            <a class="nav-link" href="#">
                                 <span data-feather="file-text" class="align-text-bottom"></span>
                                 Calendar
                             </a>
@@ -161,66 +162,106 @@
                     </ul>
                 </div>
             </nav>
-    
+
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Account</h1>
+                    <h1 class="h2">Lessons</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
                         <div class="btn-group me-2">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit Info</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse"
+                                data-bs-target=".lsn" aria-expanded="false" aria-controls="row">View All</button>
                         </div>
-                        <button type="button" class="btn btn-sm btn-outline-danger">
+                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
                             <span data-feather="calendar" class="align-text-bottom"></span>
-                            Delete Account
+                            This week
                         </button>
                     </div>
                 </div>
-                <div class="card mb-3 border-0 rounded-0" style="max-width: 100%;">
-                    <div class="row g-0">
-                        <div class="col-auto">
-                            <img src="https://picsum.photos/200" class="float-start" alt="...">
+                <!-- HERE -->
+                <h4>New select</h4>
+
+                <h4>Selection</h4>
+                <div class="container m-auto w-100">
+                    <div class="row">
+                        <div class="col">
+                            <div class="lsn-head btn btn-primary border border-0 text-start text-dark"
+                                data-bs-toggle="collapse" data-bs-target="#row" aria-expanded="false"
+                                aria-controls="row">Introduction to PHP</div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h3>Full Name</h3>
-                                <h3>Contact</h3>
-                                <p>Balitang balita sa radyong sira</p>
-                                <h3>Biography</h3>
-                                <p>Balitang balita sa radyong sira</p>
-                            </div>
+                    </div>
+                    <div class="lsn row collapse mx-auto" id="row">
+                        <a href="./lesson.php" class="btn btn-secondary border border-0 rounded-0 text-start">
+                            <div class="lsn-data">What is PHP</div>
+                        </a>
+                        <div class="btn-secondary btn border border-0 text-start rounded-0">
+                            <div class="lsn-data">What is PHP</div>
                         </div>
-                        <div class="card-body border-0 ">
-                            <h3>Links</h3>
-                            <p>Balitang balita sa radyong sira</p>
+                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
+                            <div class="lsn-data">What is PHP</div>
+                        </div>
+                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
+                            <div class="lsn-data">Understanding PHP</div>
+                        </div>
+                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
+                            <div class="lsn-data">How PHP is used</div>
+                        </div>
+                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
+                            <div class="lsn-data">Real World Applications</div>
                         </div>
                     </div>
                 </div>
-                <!-- Show this if edit info true -->
-                <div class="card mb-3 border-0 rounded-0" style="max-width: 100%;">
-                    <div class="row g-0">
-                        <div class="col-auto">
-                            <img src="https://picsum.photos/200" class="float-start" alt="...">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="lsn-head btn btn-primary border border-0 text-start text-dark"
+                                data-bs-toggle="collapse" data-bs-target="#row1" aria-expanded="false"
+                                aria-controls="row">Introduction to PHP</div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h3>Full Name</h3>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Name"></textarea>
-                                <h3>Contact</h3>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Contact"></textarea>
-                                <h3>Biography</h3>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Biography"></textarea>
-                            </div>
+                    </div>
+                    <div class="lsn row collapse mx-auto" id="row1">
+                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
+                            <div class="lsn-data">What is PHP</div>
                         </div>
-                        <div class="card-body border-0 ">
-                            <h3>Links</h3>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Biography"></textarea>
+                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
+                            <div class="lsn-data">Understanding PHP</div>
+                        </div>
+                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
+                            <div class="lsn-data">How PHP is used</div>
+                        </div>
+                        <div class="row p-0 m-0 btn border-0 rounded-0 text-start btn-secondary">
+                            <div class="lsn-data">Real World Applications</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="lsn-head btn btn-primary border border-0 text-start text-dark"
+                                data-bs-toggle="collapse" data-bs-target="#row2" aria-expanded="false"
+                                aria-controls="row">Introduction to PHP</div>
+                        </div>
+                    </div>
+                    <div class="lsn row collapse mx-auto" id="row2">
+                        <div class="row p-0 m-0">
+                            <div class="lsn-data">What is PHP</div>
+                        </div>
+                        <div class="row p-0 m-0">
+                            <div class="lsn-data">Understanding PHP</div>
+                        </div>
+                        <div class="row p-0 m-0">
+                            <div class="lsn-data">How PHP is used</div>
+                        </div>
+                        <div class="row p-0 m-0">
+                            <div class="lsn-data">Real World Applications</div>
                         </div>
                     </div>
                 </div>
             </main>
         </div>
     </div>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../js/mjs.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
+
 </html>

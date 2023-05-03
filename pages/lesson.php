@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/mcalendar.css">
-    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body class="d-flex flex-column h-100">
@@ -68,12 +67,12 @@
             aria-label="Search">
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="./account.html">Account</a>
+                <a class="nav-link px-3" href="./account.php">Account</a>
             </div>
         </div>
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="./index.html">Sign out</a>
+                <a class="nav-link px-3" href="../index.php">Sign out</a>
             </div>
         </div>
     </header>
@@ -84,21 +83,21 @@
                 <div class="position-sticky pt-3 sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./homepage.html">
+                            <a class="nav-link active" aria-current="page" href="./homepage.php">
                                 <i class="bi bi-house"></i>
                                 <span data-feather="home" class="align-text-bottom mx-1"></span>
                                 Dashboard
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./lessons.html">
+                            <a class="nav-link" href="./lessons.php">
                                 <i class="bi bi-mortarboard"></i>
                                 <span data-feather="file" class="align-text-bottom mx-1"></span>
                                 Lessons
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./assement.html">
+                            <a class="nav-link" href="./assement.php">
                                 <i class="bi bi-book"></i>
                                 <span data-feather="shopping-cart" class="align-text-bottom mx-1"></span>
                                 Assessment
@@ -106,8 +105,7 @@
                         </li>
                     </ul>
     
-                    <h6
-                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
                         <span>Saved reports</span>
                         <a class="link-secondary" href="#" aria-label="Add a new report">
                             <span data-feather="plus-circle" class="align-text-bottom"></span>
@@ -115,7 +113,7 @@
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="./calendar.php">
                                 <span data-feather="file-text" class="align-text-bottom"></span>
                                 Calendar
                             </a>
@@ -141,24 +139,43 @@
                     </ul>
                 </div>
             </nav>
-    
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Calendar</h1>
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Lesson 1</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
                         <div class="btn-group me-2">
                             <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
                             <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
                         </div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                            <span data-feather="calendar" class="align-text-bottom"></span>
-                            This week
-                        </button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#drop"
+                                aria-expanded="false" aria-controls="dropdown-menu">
+                              Dropdown button
+                            </button>
+                            <ul class="dropdown-menu" id="drop">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <h4>What is PHP</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis unde, minus modi adipisci ducimus, quos porro ab
+                    vitae, totam aperiam nemo. Consequatur id quis ad quasi minima vitae cumque ut numquam, rerum repudiandae labore eum
+                    in quae illo doloribus earum eius neque, blanditiis recusandae ipsam. Ipsam asperiores maxime ratione rem magni
+                    repellendus accusamus reiciendis illo eaque rerum eum quos delectus, porro obcaecati quisquam tempora incidunt
+                    soluta inventore, atque perspiciatis labore tenetur, at minima. Rem, itaque, officia quasi officiis laborum
+                    molestias, quis accusantium quas exercitationem sequi mollitia perferendis porro illo atque deleniti modi eaque
+                    ducimus aspernatur dolores ea molestiae ab. Repellat?</p>
+                <button class="btn btn-outline-primary">Previous</button>
+                <button class="btn btn-primary">Next</button>
+                <a href="./answer.php"><button class="btn btn-primary">Take Assement</button></a>
+                <button class="btn btn-primary" disabled>Next Lesson</button>
             </main>
         </div>
     </div>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>
