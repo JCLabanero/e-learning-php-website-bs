@@ -1,3 +1,6 @@
+<?php
+    require '../php/authenticate_check_logged.php'
+?>
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 
@@ -75,7 +78,7 @@
         </div>
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="../index.php">Sign out</a>
+            <a class="nav-link px-3" href="../php/destroy_authentication.php">Sign out</a>
             </div>
         </div>
     </header>
