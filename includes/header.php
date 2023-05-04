@@ -1,5 +1,5 @@
 <?php
-    require 'php/authenticate_check.php'
+    require 'php/session_check_in.php'
 ?>
 <!DOCTYPE html>
 <html lang="en" class="h-100">

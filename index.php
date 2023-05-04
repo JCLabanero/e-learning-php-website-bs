@@ -1,5 +1,5 @@
 <?php
-    include 'includes/header.php'
+    include_once 'includes/header.php'
 ?>
 <main>
     <section class="bg-dark text-light p-5 text-center text-md-start">

@@ -20,6 +20,6 @@
             exit("logged in successfully");
         }
     }
-    header('Location: ../pages/login.php');
+    header('Location: ../login.php');
     exit();
 ?>
