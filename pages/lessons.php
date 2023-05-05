@@ -25,10 +25,10 @@ include_once '../includes/header_in.php'
     </button>
     <div class="collapse" id="collapseExample">
         <div class="list-group rounded-0">
-            <a href="#" class="list-group-item list-group-item-action">What is PHP</a>
-            <a href="#" class="list-group-item list-group-item-action">Understanding PHP</a>
-            <a href="#" class="list-group-item list-group-item-action">How PHP is used</a>
-            <a href="#" class="list-group-item list-group-item-action">Real World Applications</a>
+            <a href="lesson.php" class="list-group-item list-group-item-action list-group-item-primary">What is PHP</a>
+            <a href="lesson.php" class="list-group-item list-group-item-action list-group-item-primary">Understanding PHP</a>
+            <a href="lesson.php" class="list-group-item list-group-item-action list-group-item-primary">How PHP is used</a>
+            <a href="lesson.php" class="list-group-item list-group-item-action list-group-item-primary">Real World Applications</a>
         </div>
     </div>
 </main>
