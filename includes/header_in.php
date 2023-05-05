@@ -80,12 +80,12 @@
         </ul>
     </div>
     
-    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand text-primary col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Company name</a>
+    <header>
+        <!-- <a class="navbar-brand text-primary col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Company name</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
         <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search"
             aria-label="Search">
         <div class="navbar-nav">
@@ -97,8 +97,44 @@
             <div class="nav-item text-nowrap">
                 <a class="nav-link px-3" href="../php/session_end.php">Sign out</a>
             </div>
-        </div>
+        </div> -->
+        <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
+            <div class="container-fluid mx-5">
+                <a class="navbar-brand text-light" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex me-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" type="button" href="./account.php">Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" type="button" href="../php/session_end.php">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
+    
     
     <div class="container-fluid h-100">
         <div class="row h-100">

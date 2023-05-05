@@ -21,7 +21,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto justify-content-center">
+                    <ul class="navbar-nav mx-auto justify-content-center navbar-nav-scroll">
                         <li class="nav-item">
                             <a class="nav-link text-light" aria-current="page" href="index.php">Home</a>
                         </li>
