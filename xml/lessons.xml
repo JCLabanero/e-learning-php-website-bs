@@ -4,14 +4,25 @@
         <topic id="1">
             <title>What is PHP?</title>
             <content>
-            The term PHP stands for Hypertext Preprocessor (it was called Personal Home Page before) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
-            A PHP file also has the ability to contain HTML tags and include client-side scripts like JavaScript. 
-            In contrast to programming languages like C or Perl that require a lot of commands to output HTML, PHP allows you to embed code directly into HTML pages. 
-            This means that you can create dynamic web pages without needing to write lots of code. 
-            The PHP code is enclosed within special start and end processing instructions &lt;?php and ?&gt;, which allow you to easily switch in and out of PHP mode as needed. 
-            The second example provided demonstrates that HTML elements can be included within PHP code by echoing them as strings. 
-            This allows for the integration of HTML tags, such as the &lt;p&gt; tag, within PHP scripts. Furthermore, it is possible to create PHP files that do not contain any HTML tags at all. 
-            These files, referred to as pure PHP files, solely consist of PHP code without any accompanying HTML markup.</content>
+            <![CDATA[What is PHP?
+                The term PHP stands for Hypertext Preprocessor (it was called Personal Home Page before) is 
+                a widely-used open source general-purpose scripting language that is especially suited for 
+                web development and can be embedded into HTML.
+                PHP Language Structure
+                Did you know? 
+                A PHP file also has the ability to contain HTML tags and include client-side scripts like JavaScript.
+                In contrast to programming languages like C or Perl that require a lot of commands to 
+                output HTML, PHP allows you to embed code directly into HTML pages. This means that you 
+                can create dynamic web pages without needing to write lots of code. The PHP code is 
+                enclosed within special start and end processing instructions <?php and ?>, which allow you 
+                to easily switch in and out of PHP mode as needed.
+                The second example provided demonstrates that HTML elements can be included within 
+                PHP code by echoing them as strings. This allows for the integration of HTML tags, such as the 
+                <p> tag, within PHP scripts.
+                Furthermore, it is possible to create PHP files that do not contain any HTML tags at all. These 
+                files, referred to as pure PHP files, solely consist of PHP code without any accompanying HTML markup.
+            ]]>
+            </content>
         </topic>
     </lesson>
     <lesson id="2" name="Basic Syntax">

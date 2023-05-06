@@ -1,25 +1,15 @@
 <?php
 include_once '../includes/header_in.php';
 
-$lesson = simplexml_load_file('../xml/lessons.xml');
+$xml = simplexml_load_file('../xml/lessons.xml');
 
-if (isset($_GET['id'])) {
+if (isset($_GET['id'])&&isset($_GET['lid'])) {
     $id = $_GET['id'];
-    $topic = null;
-    foreach ($lesson->topic as $t) {
-        if ($t->getAttribute('id') == $id) {
-            $topic = $t;
-            break;
-        }
-    }
-    if ($topic !== null) {
-        $title = (string) $topic->title;
-        $content = (string) $topic->content;
-    } else {
-        echo "<p>Topic not found.</p>";
-    }
+    $lid = $_GET['lid'];
+    $topic_node = $xml->xpath("/lessons/lesson[@id='$lid']/topic[@id='$id']")[0];
 } else {
     echo "<p>Topic ID not specified.</p>";
+    return;
 }
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
@@ -44,9 +34,10 @@ if (isset($_GET['id'])) {
             </div>
         </div>
     </div>
-    <h4><?php echo $title;?></h4>
-    <h6><?php echo $description;?></h6>
-    <p><?php echo $content;?></p>
+    <h1 id="display"></h1>
+    <h4><?php echo $topic_node->title;?></h4>
+    <p><?php echo $topic_node->content;?></p>
+    <hr/>
     <button class="btn btn-outline-primary">Previous</button>
     <button class="btn btn-primary">Next</button>
     <a href="./answer.php"><button class="btn btn-primary">Take Assement</button></a>

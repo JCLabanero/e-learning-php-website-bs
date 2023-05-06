@@ -21,7 +21,8 @@ foreach ($lessons as $lesson) {
 	foreach ($topics as $topic) {
 		$topic_title = $topic->getElementsByTagName("title")->item(0)->nodeValue;
 		$topic_id = $topic->getAttribute("id");
-        echo '<a href="lesson.php?id=<?php echo '.$topic_id.';?>" class="list-group-item list-group-item-action list-group-item-primary p-2">' . $topic_title . '</a>';
+        echo '<a href="lesson.php?id='.$topic_id.'&lid='.$id.'" class="list-group-item list-group-item-action list-group-item-primary p-2">' . $topic_title . '</a>';
+
 	}
     echo '<div class="list-group rounded-0">';
     echo '</div></div></div>';
