@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<lessons>
+    <lesson id="1" name="Introduction">
+        <topic id="1">
+            <title>What is PHP?</title>
+            <content>
+            The term PHP stands for Hypertext Preprocessor (it was called Personal Home Page before) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
+            A PHP file also has the ability to contain HTML tags and include client-side scripts like JavaScript. 
+            In contrast to programming languages like C or Perl that require a lot of commands to output HTML, PHP allows you to embed code directly into HTML pages. 
+            This means that you can create dynamic web pages without needing to write lots of code. 
+            The PHP code is enclosed within special start and end processing instructions &lt;?php and ?&gt;, which allow you to easily switch in and out of PHP mode as needed. 
+            The second example provided demonstrates that HTML elements can be included within PHP code by echoing them as strings. 
+            This allows for the integration of HTML tags, such as the &lt;p&gt; tag, within PHP scripts. Furthermore, it is possible to create PHP files that do not contain any HTML tags at all. 
+            These files, referred to as pure PHP files, solely consist of PHP code without any accompanying HTML markup.</content>
+        </topic>
+    </lesson>
+    <lesson id="2" name="Basic Syntax">
+        <topic id="1">
+            <title>PHP Tags</title>
+            <content>
+            <![CDATA[
+                PHP parses a file by searching for specific opening and closing tags, <?php and ?>, 
+                respectively. These tags indicate to PHP where to begin and end interpreting the code within 
+                them. This parsing approach enables PHP to be embedded within various types of 
+                documents since any content outside the opening and closing tags is disregarded by the 
+                PHP parser. These type of tags are called delimiters. 
+                Additionally, PHP provides a shorter alternative to the standard <?php echo statement, 
+                known as <?=, which serves as a shorthand for the longer version.
+            ]]>
+            </content>
+        </topic>
+        <topic id="2">
+            <title>PHP Comment Tag</title>
+            <content>
+            <![CDATA[
+                A PHP comment tag is used in a single or multiple lines so that those inside the comment tag 
+                would not be read and executed. It is used so that the programmers and the testers could 
+                easily read and navigate the code for checking and improvements.
+                There are ways to comment in PHP
+                Single Line:
+                Multiple Line:
+            ]]>
+            </content>
+        </topic>
+        <topic id="3">
+            <title>Code Cohabitation</title>
+            <content>
+            <![CDATA[
+                Your file consisted of three chunks of PHP code, each of which has printed some HTML text. 
+                In this section, you'll create a script that has PHP code stuck in the middle of your HTML, and 
+                you'll learn how these codes can peacefully coexist.
+                1. Create a new HTML file in any text editor.
+                2. Input the HTML below:
+                3. Type the following PHP code:
+                4. Add the closing tag of the HTML so that the document is valid:
+                5. Save the file with the name “My First Cohabitation Tryout.php”.
+                6. Put this file in the document root of the webserver.
+                Remember!
+                Choose PHP as your type of file, use ".php" as file extension name.
+            ]]>
+            </content>
+        </topic>
+    </lesson>
+</lessons>

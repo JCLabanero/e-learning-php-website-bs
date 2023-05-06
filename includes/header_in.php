@@ -100,20 +100,14 @@
         </div> -->
         <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
             <div class="container-fluid mx-5">
-                <a class="navbar-brand text-light" href="#">Navbar</a>
+                <a class="navbar-brand text-light" href="../index.php">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-light" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light">Disabled</a>
+                            <a class="nav-link text-light" aria-current="page" href="../pages/homepage.php">Home</a>
                         </li>
                     </ul>
                     <form class="d-flex me-2" role="search">
@@ -127,7 +121,7 @@
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" type="button" href="./account.php">Profile</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" type="button" href="../php/session_end.php">Log out</a></li>
+                            <li><a class="dropdown-item" type="button" onclick="return confirm('Are you sure you want to log out?')" href="../php/session_end.php">Log out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -142,21 +136,21 @@
                 <div class="position-sticky pt-3 sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./homepage.php">
+                            <a class="nav-link active" aria-current="page" href="../pages/homepage.php">
                                 <i class="bi bi-house"></i>
                                 <span data-feather="home" class="align-text-bottom mx-1"></span>
                                 Dashboard
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./lessons.php">
+                            <a class="nav-link" href="../pages/lessons.php">
                                 <i class="bi bi-mortarboard"></i>
                                 <span data-feather="file" class="align-text-bottom mx-1"></span>
                                 Lessons
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./assement.php">
+                            <a class="nav-link" href="../pages/assement.php">
                                 <i class="bi bi-book"></i>
                                 <span data-feather="shopping-cart" class="align-text-bottom mx-1"></span>
                                 Assessment
