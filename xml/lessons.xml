@@ -18,11 +18,30 @@
                 to easily switch in and out of PHP mode as needed.
                 The second example provided demonstrates that HTML elements can be included within 
                 PHP code by echoing them as strings. This allows for the integration of HTML tags, such as the 
-                <p> tag, within PHP scripts.
-                Furthermore, it is possible to create PHP files that do not contain any HTML tags at all. These 
+                <p> tag, within PHP scripts. Furthermore, it is possible to create PHP files that do not contain any HTML tags at all. These 
                 files, referred to as pure PHP files, solely consist of PHP code without any accompanying HTML markup.
             ]]>
             </content>
+            <quiz>
+                <question>
+                    <text>What does PHP stand for?</text>
+                    <options>
+                        <option>Personal Home Page</option>
+                        <option>Hypertext Preprocessor</option>
+                        <option>Private Hosting Provider</option>
+                    </options>
+                    <answer>2</answer>
+                </question>
+                <question>
+                    <text>PHP is a widely-used _____</text>
+                    <options>
+                        <option>Open-source language</option>
+                        <option>Open-source script</option>
+                        <option>Open-source general purpose scripting language</option>
+                    </options>
+                    <answer>3</answer>
+                </question>
+            </quiz>
         </topic>
     </lesson>
     <lesson id="2" name="Basic Syntax">

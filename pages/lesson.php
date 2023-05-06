@@ -43,6 +43,15 @@ for ($i = 0; $i < count($topics); $i++) {
         break;
     }
 }
+$is_last_topic = false;
+for ($i = 0; $i < count($topics); $i++) {
+    if ($topics[$i]['id'] == $id) {
+        if ($i == count($topics) - 1) {
+            $is_last_topic = true;
+        }
+        break;
+    }
+}
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     <div
@@ -78,11 +87,10 @@ for ($i = 0; $i < count($topics); $i++) {
         if ($next_id !== null) {
             echo '<a class="btn btn-primary" href="lesson.php?id='.$next_id.'&lid='.$lid.'">Next</a>';
         }
+        if ($is_last_topic) {
+            echo "<a class='btn btn-primary' href='answer.php?lid=$lid&id=$id' class='btn btn-primary'>Take Assessment</a>";
+        }
     ?>
-    <!-- <a class="btn btn-outline-primary">Previous</button> -->
-    <!-- <button class="btn btn-primary">Next</button> -->
-    <!-- <a href="./answer.php"><button class="btn btn-primary">Take Assement</button></a>
-    <button class="btn btn-primary" disabled>Next Lesson</button> -->
 </main>
 
 <?php
