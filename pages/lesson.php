@@ -11,6 +11,38 @@ if (isset($_GET['id'])&&isset($_GET['lid'])) {
     echo "<p>Topic ID not specified.</p>";
     return;
 }
+
+$next_id = null;
+$prev_id = null;
+
+// find the previous and next topic ids
+$lesson_node = $xml->xpath("/lessons/lesson[@id='$lid']")[0];
+$topics = $lesson_node->xpath("topic");
+
+for ($i = 0; $i < count($topics); $i++) {
+    if ($topics[$i]['id'] == $id) {
+        if ($i > 0) {
+            $prev_id = $topics[$i - 1]['id'];
+        }
+        if ($i < count($topics) - 1) {
+            $next_id = $topics[$i + 1]['id'];
+        }
+        break;
+    }
+}
+$lesson_node = $xml->xpath("/lessons/lesson[@id='$lid']")[0];
+$topics = $lesson_node->xpath("topic");
+for ($i = 0; $i < count($topics); $i++) {
+    if ($topics[$i]['id'] == $id) {
+        if ($i > 0) {
+            $prev_id = $topics[$i - 1]['id'];
+        }
+        if ($i < count($topics) - 1) {
+            $next_id = $topics[$i + 1]['id'];
+        }
+        break;
+    }
+}
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     <div
@@ -38,10 +70,19 @@ if (isset($_GET['id'])&&isset($_GET['lid'])) {
     <h4><?php echo $topic_node->title;?></h4>
     <p><?php echo $topic_node->content;?></p>
     <hr/>
-    <button class="btn btn-outline-primary">Previous</button>
-    <button class="btn btn-primary">Next</button>
-    <a href="./answer.php"><button class="btn btn-primary">Take Assement</button></a>
-    <button class="btn btn-primary" disabled>Next Lesson</button>
+    <p></p>
+    <?php
+        if ($prev_id !== null) {
+            echo '<a class="btn btn-outline-primary me-2" href="lesson.php?id='.$prev_id.'&lid='.$lid.'">Previous</a>';
+        }
+        if ($next_id !== null) {
+            echo '<a class="btn btn-primary" href="lesson.php?id='.$next_id.'&lid='.$lid.'">Next</a>';
+        }
+    ?>
+    <!-- <a class="btn btn-outline-primary">Previous</button> -->
+    <!-- <button class="btn btn-primary">Next</button> -->
+    <!-- <a href="./answer.php"><button class="btn btn-primary">Take Assement</button></a>
+    <button class="btn btn-primary" disabled>Next Lesson</button> -->
 </main>
 
 <?php

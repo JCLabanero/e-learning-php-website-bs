@@ -5,12 +5,12 @@
             <title>What is PHP?</title>
             <content>
             <![CDATA[What is PHP?
-                The term PHP stands for Hypertext Preprocessor (it was called Personal Home Page before) is 
+                The term <b>PHP</b> stands for <b>Hypertext Preprocessor</b> (it was called Personal Home Page before) is 
                 a widely-used open source general-purpose scripting language that is especially suited for 
                 web development and can be embedded into HTML.
-                PHP Language Structure
-                Did you know? 
-                A PHP file also has the ability to contain HTML tags and include client-side scripts like JavaScript.
+                <br/>PHP Language Structure
+                <br/><b><i>Did you know?</i></b>
+                <br/><br/>A PHP file also has the ability to contain HTML tags and include client-side scripts like JavaScript.
                 In contrast to programming languages like C or Perl that require a lot of commands to 
                 output HTML, PHP allows you to embed code directly into HTML pages. This means that you 
                 can create dynamic web pages without needing to write lots of code. The PHP code is 
