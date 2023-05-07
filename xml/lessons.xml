@@ -9,6 +9,9 @@
                 a widely-used open source general-purpose scripting language that is especially suited for 
                 web development and can be embedded into HTML.
                 <br/>PHP Language Structure
+
+                <img src="../massets/images/sample.png" alt="...">
+
                 <br/><b><i>Did you know?</i></b>
                 <br/><br/>A PHP file also has the ability to contain HTML tags and include client-side scripts like JavaScript.
                 In contrast to programming languages like C or Perl that require a lot of commands to 
@@ -18,7 +21,11 @@
                 to easily switch in and out of PHP mode as needed.
                 The second example provided demonstrates that HTML elements can be included within 
                 PHP code by echoing them as strings. This allows for the integration of HTML tags, such as the 
-                <p> tag, within PHP scripts. Furthermore, it is possible to create PHP files that do not contain any HTML tags at all. These 
+                <p> tag, within PHP scripts.
+
+                <img src="../massets/images/sample.png" alt="...">
+                
+                Furthermore, it is possible to create PHP files that do not contain any HTML tags at all. These 
                 files, referred to as pure PHP files, solely consist of PHP code without any accompanying HTML markup.
             ]]>
             </content>
@@ -34,6 +41,9 @@
                 them. This parsing approach enables PHP to be embedded within various types of 
                 documents since any content outside the opening and closing tags is disregarded by the 
                 PHP parser. These type of tags are called delimiters. 
+
+                <img src="../massets/images/sample.png" alt="...">
+
                 Additionally, PHP provides a shorter alternative to the standard <?php echo statement, 
                 known as <?=, which serves as a shorthand for the longer version.
             ]]>
@@ -48,7 +58,10 @@
                 easily read and navigate the code for checking and improvements.
                 There are ways to comment in PHP
                 Single Line:
+                <img src="../massets/images/sample.png" alt="...">
                 Multiple Line:
+                <img src="../massets/images/sample.png" alt="...">
+
             ]]>
             </content>
         </topic>
@@ -61,13 +74,442 @@
                 you'll learn how these codes can peacefully coexist.
                 1. Create a new HTML file in any text editor.
                 2. Input the HTML below:
+                <img src="../massets/images/sample.png" alt="...">
                 3. Type the following PHP code:
+                <img src="../massets/images/sample.png" alt="...">
                 4. Add the closing tag of the HTML so that the document is valid:
+                <img src="../massets/images/sample.png" alt="...">
                 5. Save the file with the name “My First Cohabitation Tryout.php”.
+                <img src="../massets/images/sample.png" alt="...">
                 6. Put this file in the document root of the webserver.
                 Remember!
                 Choose PHP as your type of file, use ".php" as file extension name.
             ]]>
+            </content>
+        </topic>
+        <topic id="4">
+            <title>PHP Variables, Constants, and Superglobal Variables</title>
+            <content>
+            <![CDATA[
+                    <b>PHP Variables</b>
+                    Variable may be a symbol or name that stands for a value. Variables are utilized
+                for putting away values such as characters, numeric values, character strings, or
+                memory addresses so that they can be utilized in any portion of the program.
+                Declare PHP Variables
+                    Variables in PHP must start with a $ (dollar sign) taken after by the name of
+                the variable.
+                    A substantial variable name begins with a letter (A-Z, a-z) or emphasizes by an
+                underscore (_), taken after by letters, numbers, or underscores. On the off chance that
+                a variable title is more than one word, it can be isolated with an underscore (for the
+                case $employee_code rather than $employeecode). A '$' is an extraordinary variable
+                that cannot be assigned.
+
+                <img src="../massets/images/sample.png" alt="...">
+
+                On the example above, the declared variables are $text, $number, and $name.
+                Remember:
+                Variable names are case-sensitive ($age and $AGE are two different variables).
+            ]]>
+            </content>
+        </topic>
+        <topic id="5">
+            <title>PHP Constants</title>
+            <content>
+            <![CDATA[
+                    A constant (name) is an identifier for a primary value. The value cannot be adjusted amid
+                the script's execution. A substantial constant name begins with a letter or underscores with
+                no dollar sign ($) before the name) and by constant identifiers are always in an uppercase
+                form. Constants are characterized by utilizing the define() function or by utilizing the const
+                keyword outside a course definition as of PHP. The constant’s name and value must be set
+                inside the () parentheses. After characterizing, it can never be changed or indistinct. As it
+                were, scalar information, i.e., Boolean, numbers, float, and string, can be contained in
+                constants.
+                In creating a constant, use the function define().
+                define(name, value, case-insensitive)
+                Where, name - indicates the name of the constant
+                    value - indicates the value of the constant
+                    case - insensitive - indicates whether the constant name ought to be
+                    case-insensitive. The default is false.
+                Creating a constant with a case – sensitive name:
+                <img src="../massets/images/sample.png" alt="...">
+                And creating a constant with a case – insensitive name:
+                <img src="../massets/images/sample.png" alt="...">
+                <br/><b><i>Did you know?</i></b>
+                PHP constants are global, and it can be utilized in the entire script.
+            ]]>
+            </content>
+        </topic>
+        <topic id="6">
+            <title>PHP Superglobal Variables</title>
+            <content>
+            <![CDATA[
+                    $GLOBALS is one of the PHP superglobal variables where can be used
+                instead of the 'global' keyword to access variables from global scope, the variables
+                which can be accessed from anywhere in a PHP script, even within functions.
+                A few predefined variables in PHP are "superglobals," which implies that they
+                are continuously available, regardless of scope, and you'll be able to get to them from
+                any function, class, or file without having to do anything extraordinary. PHP inserts all global
+                variables in an object called $GLOBALS. The index of $GLOBAS holds the name of the
+                variable.
+                Example:
+                <img src="../massets/images/sample.png" alt="...">
+                In the example, since z is a variable present in $GLOBALS array, it is also accessible
+                from outside the function!
+            ]]>
+            </content>
+        </topic>
+        <topic id="7">
+            <title>PHP Operators</title>
+            <content>
+            <![CDATA[
+                    An operator is somewhat taking one or more values in programming language
+                and yields another value so that the development itself gets to be an expression.
+                Operators can be gathered base on the number of values they take. Unary operators take
+                as it were one value, to illustrate '!' (the logical not operator) or '++' (the increment operator).
+                The binary operators take two values, such as the commonplace arithmetical operators +
+                (plus) and - (minus), and the larger part of PHP operators drop into this category. At last,
+                there's a single ternary operator.?, which takes three values; this can be ordinarily alluded to
+                basically as "the ternary operator" (even though it might be more legitimately be called the
+                conditional operator).
+                PHP Operators are utilized to perform various operations on variables and values.
+                PHP partitions the operators within the following:
+                1. Arithmetic Operators
+                2. Assignment Operators
+                3. Comparison Operators
+                4. Increment or Decrement Operators
+                5. String Operators
+                6. Logical Operators
+                7. Array Operators
+                8. Conditional Assignment Operators
+            ]]>
+            </content>
+           </topic>
+        <topic id="8">
+            <title>PHP Arithmetic Operators</title>
+            <content>
+            <![CDATA[
+                    PHP arithmetic operators are utilized with numeric values to perform various arithmetical
+                operations, like addition, subtraction, etc. Remember the basic arithmetic from your school?
+                These work just like those.
+                <img src="../massets/images/sample.png" alt="...">
+                    The division operator ("/") outputs a float value unless the two operands are integers or
+                strings that get changed over to integers, and the numbers are evenly divisible, wherein
+                case the value of a number will be returned. For numbers division, see intdiv().
+                The operand of modulo is changed over to integers (by stripping the decimal
+                portion) before handling. The output of the modulo operator will have the same sign
+                as the profit — the output of $a % $b will have the same sign as $a.
+                Example:
+                <img src="../massets/images/sample.png" alt="...">
+            ]]>
+            </content>
+           </topic>
+        <topic id="9">
+            <title>PHP Assignment Operators</title>
+            <content>
+            <![CDATA[
+                    The assignment operator is "=". Your first disposition may be to think of this as "equal to". Do
+                not. It indeed implies that the left operand gets set to the value of the expression on the
+                proper (that's, "gets set to").
+                The value of an assignment operator is the value assigned. That's the value of "$a = 3"
+                is 3. It permits you to do a few dangerous things.
+                Example:
+                <img src="../massets/images/sample.png" alt="...">
+                    In expansion to the essential assignment operator, there are "combined operators" for
+                all binary arithmetic, array union, and string operators that permit you to utilize a value in an
+                expression and, after that, set its value to the result of that expression.
+                Example:
+                <img src="../massets/images/sample.png" alt="...">
+                    Note that the assignment duplicates the first variable to the modern one (assignment
+                by value), so changes to one will not influence the other. It may also have significance in
+                case you wish to duplicate something like a vast array inside a tight loop.
+                A particular case to the regular assignment by value conduct inside PHP
+                happens with objects, which are assigned by reference. Objects may be expressly
+                replicated through the clone keyword.
+                Assignment by reference is supported utilizing the "$var = &$othervar;" language
+                structure. Assignment by reference implies that both variables conclusion indicating at the
+                same information, and nothing is replicated anywhere.
+                PHP partitions the following operators below. We already discussed the
+                arithmetic and assignment operators. Now, we will discuss the other operators:
+                ● Comparison operators
+                ● Increment/Decrement operators
+                ● Logical operators
+                ● String operators
+                ● Array operators
+                ● Conditional assignment operators
+            ]]>
+            </content>
+           </topic>
+        <topic id="10">
+            <title>PHP Comparison Operators</title>
+            <content>
+            <![CDATA[
+                    Comparison operators in PHP allow you to compare two different or equal
+                values. Here are some examples of various comparisons, as shown below.
+                <img src="../massets/images/sample.png" alt="...">
+                    In case you compare a number with a string, or the comparison includes
+                numerical strings, at that point, each string is changed over to a number, and the
+                comparison performed numerically. These rules, moreover, apply to the switch
+                articulation. The sort transformation does not take put when the comparison is === or !== as
+                these include comparing the sort as well as the value.
+            ]]>
+            </content>
+           </topic>
+        <topic id="11">
+            <title>PHP Incrementing or Decrementing Operators</title>
+            <content>
+            <![CDATA[
+                    C-style pre- and post-increment and decrement operators are supported in
+                PHP.
+                Remember!
+                The increment or decrement operators, as it were, affect numbers and strings. Arrays,
+                objects, Boolean, and resources are not affected. Decrementing Invalid or NULL values have
+                no impact as well, but increasing them results in 1.
+                <img src="../massets/images/sample.png" alt="...">
+            ]]>
+            </content>
+           </topic>
+        <topic id="12">
+            <title>PHP Logical Operators</title>
+            <content>
+            <![CDATA[
+                    Logical operators are utilized to combine two conditional statements.
+                    <img src="../massets/images/sample.png" alt="...">
+            ]]>
+            </content>
+           </topic>
+        <topic id="13">
+            <title>PHP String Operators</title>
+            <content>
+            <![CDATA[
+                    PHP has two operators that are extraordinarily outlined for strings. The
+                    concatenation operator ('.') is the primary, which returns the concatenated value of its
+                    right and left arguments. Next is the concatenating assignment operator ('.='), which
+                    appends the value on the right to the value on the left side.
+                    <img src="../massets/images/sample.png" alt="...">
+            ]]>
+            </content>
+           </topic>
+            <topic id="14">
+            <title>PHP Array Operators</title>
+            <content>
+            <![CDATA[
+                    A PHP Array Operators are utilized in comparing arrays.
+                    <img src="../massets/images/sample.png" alt="...">
+                    The + operator returns the right-hand array added to the left-hand array. For
+                    keys that exist in both clusters, the components from the left-hand array will be utilized,
+                    and the coordinating components from the right-hand array will be ignored.
+                    ]]>
+            </content>
+           </topic>
+        </lesson>
+        <lesson id="3" name="PHP Conditional Loop Statements">
+                <topic id="1">
+                    <title>PHP Conditional Statements</title>
+                    <content>
+                    <![CDATA[
+                        Like most programming languages, PHP permits you to input in code that
+                    performs various actions according to the results of logical or comparative test
+                    conditions at run-time. It implies you'll make test conditions within the form of
+                    expressions that assesses to either correct or wrong and based on these results, and
+                    you'll perform specific actions.
+                    Below are the statements in PHP that you can use to make decisions:
+                    ●The if statement
+                    ●The if...else statement
+                    ●The if...elseif....else statement
+                    ●The switch case statement
+                    ]]>
+                    </content>
+                </topic>
+            <topic id="2">
+                    <title>The if Statements</title>
+                    <content>
+                    <![CDATA[
+                        The if statement is utilized to execute a piece of code only if the specified condition
+                    assesses to be correct. It is the basic PHP's conditional statements and can be written in:
+                    <img src="../massets/images/sample.png" alt="...">
+                    Example:
+                    <img src="../massets/images/sample.png" alt="...">
+                    ]]>
+                    </content>
+                </topic>
+            <topic id="3">
+                    <title>The if...else Statement</title>
+                    <content>
+                    <![CDATA[
+                        You can enhance the decision-making process by giving a choice through
+                    including an else statement to the if statement. The if...else statement permits you to
+                    execute one piece of code if the required condition is assessing to be true and another
+                    piece of code if it is assessing to be untrue. It can be composed, like this:
+                    <img src="../massets/images/sample.png" alt="...">
+                    Example:
+                    <img src="../massets/images/sample.png" alt="...">
+                    The illustration below will display "Have a nice weekend!" if the current day
+                    is Friday, something else will display "Have a nice day!"
+                    ]]>
+                    </content>
+                </topic>
+            <topic id="4">
+                    <title>The if...elseif...else Statement</title>
+                    <content>
+                    <![CDATA[
+                        The if...elseif...else is a statement that is utilized to combine numerous if...else
+                    statements.\
+                    <img src="../massets/images/sample.png" alt="...">
+                    Example:
+                    <img src="../massets/images/sample.png" alt="...">
+                    The figure illustrates that it will display "Have a nice weekend!" if it is Friday, and "Have a
+                nice Sunday!" if it is Sunday, or else it will display "Have a nice day!"
+                    ]]>
+                    </content>
+                </topic>
+            <topic id="5">
+                    <title>Switch Statements</title>
+                    <content>
+                    <![CDATA[
+                        Switch statement is utilized to perform various actions based on different conditions. A
+                    switch statement will look like this:
+                    <img src="../massets/images/sample.png" alt="...">
+                    ]]>
+                    </content>
+                </topic>
+            <topic id="6">
+                    <title>If...Else Vs. Switch Statement</title>
+                    <content>
+                    <![CDATA[
+                        The switch statement is another approach to the if-else if-else statement, which does
+                    nearly the same thing. The switch statement tests a variable against an arrangement of
+                    values until it finds a match, and after that, it executes the code comparing to that match.
+                    <img src="../massets/images/sample.png" alt="...">
+                    The example above shows how we can use the switch statement to display
+                    different messages for each day.
+                    ]]>
+                    </content>
+                </topic>
+            <topic id="7">
+                    <title>Loop Statements</title>
+                    <content>
+                    <![CDATA[
+                        The switch statement is another approach to the if-else if-else statement, which does
+                    nearly the same thing. The switch statement tests a variable against an arrangement of
+                    values until it finds a match, and after that, it executes the code comparing to that match.
+                    <img src="../massets/images/sample.png" alt="...">
+                    The example above shows how we can use the switch statement to display
+                    different messages for each day.
+
+                        Loops are utilized to execute a piece of code once more and more, as long as
+                    a particular condition is reached. The essential thought behind a loop is to automate
+                    the repetitive errands inside a program to save time and exertion. PHP supports four
+                    distinctive sorts of loops.
+                    1. FOR - loops through a piece of code until the counter comes to an indicated
+                    number
+                    2. WHILE - loops through a piece of code as long as the condition indicated is
+                    assessed to be correct.
+                    3. DO...WHILE - the piece of code executed once after that condition is assessed.
+                    If the condition is correct, the statement is repeated as long as the indicated
+                    condition is correct.
+                    4. FOREACH - loops through a piece of code for each element in an array.
+                    You may learn how to loop through the values of array utilizing the foreach() loop
+                    at the end of this lesson. The foreach() loop works mainly with arrays.
+                    ]]>
+                    </content>
+                </topic>
+            <topic id="8">
+                    <title>The For Loop Statement</title>
+                    <content>
+                    <![CDATA[
+                        The for loop repeats the piece of code as long as a particular condition is
+                    reached. It is regularly utilized to execute a piece of code for a certain number of times.
+                    <img src="../massets/images/sample.png" alt="...">
+
+                    The parameters for the "for loop" have the following interpretations:
+
+                    • the initialization — assign to initialize the counter variables and assessed once
+                    unconditionally before the first execution of the body of the loop.
+                    • The condition — within the starting of each iteration, the condition is assessed. On the
+                    off chance that it assesses to be true, the loop proceeds, and the nested statements are
+                    executed. If it assesses to be wrong, the execution of the loop will end.
+                    • The afterthought — changes the loop counter with a new value. It assesses at the end
+                    of each iteration.
+                    Example:
+                    <img src="../massets/images/sample.png" alt="...">
+                    Output:
+                    <img src="../massets/images/sample.png" alt="...">
+                    ]]>
+                    </content>
+                </topic>
+            <topic id="9">
+                    <title>The While Loop Statement</title>
+                    <content>
+                    <![CDATA[
+                       The while statement iterates through a block of a statement as long as the
+                    condition specified evaluates to be true.
+                    <img src="../massets/images/sample.png" alt="...">
+                    Example:
+                    <img src="../massets/images/sample.png" alt="...">
+                    Output:
+                    <img src="../massets/images/sample.png" alt="...">
+                        The case above characterizes a loop that begins with $i=1. The loop will proceed to
+                    run while $i is less than or the same to 3. The $i will increment by 1 each time the loop runs.
+                    ]]>
+                    </content>
+                </topic>
+            <topic id="10">
+                    <title>The Do While Loop Statement</title>
+                    <content>
+                    <![CDATA[
+                       The do-while loop could be a variation of the while loop, which assesses the condition
+                    at the end of each loop cycle. With a do-while loop, the block of code is executed once,
+                    and after that, the condition is assessed. If the condition is correct, the statement is repeated
+                    as long as the specified condition is assessed to be correct.
+                    <img src="../massets/images/sample.png" alt="...">
+                    Example:
+                    <img src="../massets/images/sample.png" alt="...">
+                    Output:
+                    <img src="../massets/images/sample.png" alt="...">
+                        The example defines a loop that begins at $i=1. It will then increment $i with 1,
+                    and display the output. Then the condition is assessed, then the loop will continue to
+                    run as long as $i is less than or can equal to 3.
+                    ]]>
+                    </content>
+                </topic>
+            <topic id="11">
+                    <title>The Difference of both while and do while loop</title>
+                    <content>
+                    <![CDATA[
+                       The while loop is different from the do-while loop in one specific reason; in a while loop,
+                    the condition to be assessed is tested at the start of each loop iteration, so if the conditional
+                    expression is assessed to be false, the loop will never be executed.
+
+                        However, in a do-while loop, the loop will be executed once, even if the conditional
+                    expression is false because the condition is assessed at the end of the loop iteration instead
+                    of from the start.
+
+                    <b><i>Remember:</b></i>
+                        Do while loop will continue to execute the code once, then it will assess the condition
+                    and repeat the loop while the indicated condition is correct.
+                    ]]>
+                    </content>
+                </topic>
+            <topic id="12">
+                    <title>For Each Loop Statement</title>
+                    <content>
+                    <![CDATA[
+                       The foreach loop is utilized to iterate over objects or arrays.
+                       <img src="../massets/images/sample.png" alt="...">
+                       Or
+                       <img src="../massets/images/sample.png" alt="...">
+                       Example:
+                       <img src="../massets/images/sample.png" alt="...">
+                       OutputL
+                       <img src="../massets/images/sample.png" alt="...">
+                            The example above demonstrates a loop that will print the values of the given
+                        array.
+                       Example:
+                       <img src="../massets/images/sample.png" alt="...">
+                       Output:
+                       <img src="../massets/images/sample.png" alt="...">
+                            The example above shows a foreach loop that iterates on a key-value pair of
+                        the array $colors]]>
             </content>
         </topic>
     </lesson>
