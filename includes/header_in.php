@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="check2" viewBox="0 0 16 16">
             <path

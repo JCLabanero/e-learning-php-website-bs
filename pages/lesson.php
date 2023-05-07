@@ -7,50 +7,42 @@ if (isset($_GET['id'])&&isset($_GET['lid'])) {
     $id = $_GET['id'];
     $lid = $_GET['lid'];
     $topic_node = $xml->xpath("/lessons/lesson[@id='$lid']/topic[@id='$id']")[0];
+
+    $prev_topic = null;
+    $next_topic = null;
+    $prev_lesson = null;
+    $next_lesson = null;
+    $is_last_topic = false;
+    $topics = $xml->xpath("/lessons/lesson[@id='$lid']/topic");
+    $lessons = $xml->xpath("/lessons/lesson");
+    for($i = 0; $i < count($topics); $i++) {
+        if ($topics[$i]['id'] == $id) {
+            if ($i > 0) {
+                $prev_topic = $topics[$i - 1]['id'];
+            }
+            if ($i < count($topics) - 1) {
+                $next_topic = $topics[$i + 1]['id'];
+            }
+            if ($i == count($topics) - 1) {
+                $is_last_topic = true;
+                for ($i = 0; $i < count($lessons); $i++) {
+                    if ($lessons[$i]['id'] == $lid) {
+                        if ($i > 0) {
+                            $prev_lesson = $lessons[$i - 1]['id'];
+                        }
+                        if ($i < count($lessons) - 1) {
+                            $next_lesson = $lessons[$i + 1]['id'];
+                        }
+                        break;
+                    }
+                }
+            }
+            break;
+        }
+    }
 } else {
     echo "<p>Topic ID not specified.</p>";
     return;
-}
-
-$next_id = null;
-$prev_id = null;
-
-// find the previous and next topic ids
-$lesson_node = $xml->xpath("/lessons/lesson[@id='$lid']")[0];
-$topics = $lesson_node->xpath("topic");
-
-for ($i = 0; $i < count($topics); $i++) {
-    if ($topics[$i]['id'] == $id) {
-        if ($i > 0) {
-            $prev_id = $topics[$i - 1]['id'];
-        }
-        if ($i < count($topics) - 1) {
-            $next_id = $topics[$i + 1]['id'];
-        }
-        break;
-    }
-}
-$lesson_node = $xml->xpath("/lessons/lesson[@id='$lid']")[0];
-$topics = $lesson_node->xpath("topic");
-for ($i = 0; $i < count($topics); $i++) {
-    if ($topics[$i]['id'] == $id) {
-        if ($i > 0) {
-            $prev_id = $topics[$i - 1]['id'];
-        }
-        if ($i < count($topics) - 1) {
-            $next_id = $topics[$i + 1]['id'];
-        }
-        break;
-    }
-}
-$is_last_topic = false;
-for ($i = 0; $i < count($topics); $i++) {
-    if ($topics[$i]['id'] == $id) {
-        if ($i == count($topics) - 1) {
-            $is_last_topic = true;
-        }
-        break;
-    }
 }
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
@@ -81,14 +73,20 @@ for ($i = 0; $i < count($topics); $i++) {
     <hr/>
     <p></p>
     <?php
-        if ($prev_id !== null) {
-            echo '<a class="btn btn-outline-primary me-2" href="lesson.php?id='.$prev_id.'&lid='.$lid.'">Previous</a>';
+        if ($prev_topic !== null) {
+            echo '<a class="btn btn-outline-primary me-2" href="lesson.php?id='.$prev_topic.'&lid='.$lid.'">Previous</a>';
         }
-        if ($next_id !== null) {
-            echo '<a class="btn btn-primary" href="lesson.php?id='.$next_id.'&lid='.$lid.'">Next</a>';
+        if ($next_topic !== null) {
+            echo '<a class="btn btn-primary me-2" href="lesson.php?id='.$next_topic.'&lid='.$lid.'">Next</a>';
         }
         if ($is_last_topic) {
-            echo "<a class='btn btn-primary' href='answer.php?lid=$lid&id=$id' class='btn btn-primary'>Take Assessment</a>";
+            echo "<a class='btn btn-primary me-2' href='answer.php?lid=$lid&id=$id'>Take Assessment</a>";
+        }
+        if ($next_lesson !== null) {
+            echo '</div><a class="btn btn-secondary me-2" href="lesson.php?id=1&lid='.$next_lesson.'">Next Lesson</a>';
+        }
+        if ($prev_lesson !== null) {
+            echo '<a class="btn btn-secondary me-2" href="lesson.php?id=1&lid='.$prev_lesson.'">Previous Lesson</a>';
         }
     ?>
 </main>
