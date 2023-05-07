@@ -1,8 +1,51 @@
 <?php
-include_once '../includes/header_in.php'
+include_once '../includes/header_in.php';
+$xml = new DOMDocument();
+$xml->load("../xml/quizzes.xml");
+
+// Get the quiz id from the URL
+if (isset($_GET['id'])&&isset($_GET['lid'])) {
+    $id = $_GET['id'];
+    $lid = $_GET['lid'];
+}
+
+$quiz_id = $lid.$id;
+$quizzes = $xml->getElementsByTagName("quiz");
+
 ?>
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <div
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+<?php
+foreach ($quizzes as $quiz) {
+    $cntr=0;
+    $cntrForQuiz=0;
+    $cntrForOption=0;
+    if ($quiz->getAttribute('id') == $quiz_id) {
+        $questions = $quiz->getElementsByTagName("question");
+        foreach ($questions as $question) {
+            $cntrForQuiz++;
+            echo '<div class="card my-3"><div class="card-header">
+                <h5 class="card-title">Question #1</h5></div>
+                <div class="card-body">';
+            echo $question->getElementsByTagName('text')->item(0)->nodeValue;
+    
+            echo '</div><ul class="list-group list-group-flush">';
+            $options = $question->getElementsByTagName('option');
+            foreach($options as $option){
+                $cntrForOption++;
+                echo '<li class="list-group-item"><div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault'.$cntrForQuiz.'" id="flexRadioDefault'.$cntrForQuiz.$cntrForOption.'">
+                    <label class="form-check-label" for="flexRadioDefault'.$cntrForQuiz.$cntrForOption.'">';
+                echo $option->nodeValue;
+                echo '</label></div></li>';
+            }
+        }
+    }
+    echo '</ul>
+    </div>';
+}
+?>
+
+                <!-- <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Question</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
@@ -187,7 +230,7 @@ include_once '../includes/header_in.php'
                         <label for="exampleFormControlTextarea1" class="form-label">Answer here</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
                     </div>
-                </div>
+                </div> -->
                   
                 <button class="btn btn-outline-primary">Previous</button>
                 <button class="btn btn-primary">Next</button>

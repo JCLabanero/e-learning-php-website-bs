@@ -22,26 +22,6 @@
                 files, referred to as pure PHP files, solely consist of PHP code without any accompanying HTML markup.
             ]]>
             </content>
-            <quiz>
-                <question>
-                    <text>What does PHP stand for?</text>
-                    <options>
-                        <option>Personal Home Page</option>
-                        <option>Hypertext Preprocessor</option>
-                        <option>Private Hosting Provider</option>
-                    </options>
-                    <answer>2</answer>
-                </question>
-                <question>
-                    <text>PHP is a widely-used _____</text>
-                    <options>
-                        <option>Open-source language</option>
-                        <option>Open-source script</option>
-                        <option>Open-source general purpose scripting language</option>
-                    </options>
-                    <answer>3</answer>
-                </question>
-            </quiz>
         </topic>
     </lesson>
     <lesson id="2" name="Basic Syntax">
