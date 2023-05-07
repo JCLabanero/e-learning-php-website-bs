@@ -4,23 +4,140 @@
         <question qid="1">
             <text>What does PHP stand for?</text>
             <options>
-                <option>Personal Home Page</option>
-                <option>Hypertext Preprocessor</option>
-                <option>Private Hosting Provider</option>
+            <option>Personal Home Page</option>
+            <option>Hypertext Preprocessor</option>
+            <option>Private Hosting Provider</option>
             </options>
             <answer>2</answer>
         </question>
         <question qid="2">
-            <text>PHP is a widely-used _____</text>
+            <text>What is PHP used for?</text>
             <options>
-                <option>Open-source language</option>
-                <option>Open-source script</option>
-                <option>Open-source general purpose scripting language</option>
+            <option>Web development</option>
+            <option>Desktop application development</option>
+            <option>Game development</option>
+            </options>
+            <answer>1</answer>
+        </question>
+        <question qid="3">
+            <text>PHP is a widely-used</text>
+            <options>
+            <option>Open-source language</option>
+            <option>Open-source script</option>
+            <option>Open-source general purpose scripting language</option>
             </options>
             <answer>3</answer>
         </question>
+        <question qid="4">
+            <text>PHP can be embedded into?</text>
+            <options>
+            <option>C++</option>
+            <option>C#</option>
+            <option>HTML</option>
+            </options>
+            <answer>3</answer>
+        </question>
+        <question qid="5">
+            <text>What are the starting and ending tags of PHP?</text>
+            <options>
+            <option>&lt;? and ?&gt;</option>
+            <option>&lt;?php and ?&gt;</option>
+            <option>&lt;$ and $&gt;</option>
+            </options>
+            <answer>2</answer>
+        </question>
+        <question qid="6">
+            <text>Is it possible to create a pure PHP file?</text>
+            <options>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Maybe</option>
+            </options>
+            <answer>1</answer>
+        </question>
+        <question qid="7">
+            <text>Is PHP helpful in creating dynamic websites?</text>
+            <options>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Maybe</option>
+            </options>
+            <answer>1</answer>
+        </question>
+        <question qid="8">
+            <text>Do PHP prohibit the integration of HTML tags in its file?</text>
+            <options>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Maybe</option>
+            </options>
+            <answer>1</answer>
+        </question>
+        <question qid="9">
+            <text>Do PHP also have the ability to contain JavaScript in its file?</text>
+            <options>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Maybe</option>
+            </options>
+            <answer>1</answer>
+        </question>
+        <question qid="10">
+            <text>What was PHP’s meaning before?</text>
+            <options>
+            <option>Personality Home Page</option>
+            <option>Personal Home Page</option>
+            <option>Persona Homing Page</option>
+            </options>
+            <answer>2</answer>
+        </question>
+        <question qid="11">
+            <text>.In contrast to the languages like ___ and ____ that require a lot of commands to output HTML, PHP allows you to embed code directly into HTML pages.</text>
+            <options>
+            <option>C++ and C#</option>
+            <option>C and Perl</option>
+            <option>CSS and JavaScript</option>
+            </options>
+            <answer>2</answer>
+        </question>
+        <question qid="12">
+            <text>It is easy to switch in and out of PHP mode</text>
+            <options>
+                <option>True</option>
+                <option>False</option>
+                <option>Unsure</option>
+            </options>
+            <answer>1</answer>
+        </question>
+        <question qid="13">
+            <text>What is missing in the following code? <?php echo "<p>Hello World"; ?></text>
+            <options>
+            <option>;</option>
+            <option>"</option>
+            <option>&lt;/p&gt;</option>
+            </options>
+            <answer>1</answer>
+        </question>
+        <question qid="14">
+            <text>What is wrong in the following code? <?php echo "<p>Hello World</p>"; !?></text>
+            <options>
+            <option>echo</option>
+            <option>&lt;p&gt;</option>
+            <option>!&gt;</option>
+            </options>
+            <answer>3</answer>
+        </question>
+        <question qid="15">
+            <text>What is wrong in the following code? <?php echo "<p>Hello World</p>" echo; ?></text>
+            <options>
+            <option>echo "<p>Hello World</p>" echo;</option>
+            <option>!&gt;</option>
+            <option>&lt;?php</option>
+            </options>
+            <answer>1</answer>
+        </question>
     </quiz>
-    <quiz id="23">
+    <quiz id="214">
         <question qid="1">
             <text>221?</text>
             <options>

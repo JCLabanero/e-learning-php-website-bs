@@ -8,37 +8,46 @@ if (isset($_GET['id'])&&isset($_GET['lid'])) {
     $id = $_GET['id'];
     $lid = $_GET['lid'];
 }
-$correctAnswers=array();
-$quiz_id = $lid.$id;
+
 $quizzes = $xml->getElementsByTagName("quiz");
 
-if(isset($_POST['submit'])) {
-    echo "<h1>HEY IT WORKS</h1>";
-    // $answers = $_POST;
-    // $correctAnswers = array();
+$correctAnswers=array();
+$quiz_id = $lid.$id;
 
-    // // Loop over the submitted answers and check for correct ones
-    // foreach ($answers as $key => $value) {
-    //     if (is_numeric($key)) {
-    //         $questionId = substr($key, 0, 1);
-    //         $optionId = substr($key, 1, 1);
-    //         $correctAnswer = $quizzes[$quiz_id-1]['question'][$questionId-1]['answer'];
-    //         if ($value == $correctAnswer) {
-    //             $correctAnswers[] = $questionId.$optionId;
-    //         }
-    //     }
-    // }
-
-    // // Print the correct answers
-    // echo "Correct answers: ";
-    // foreach ($correctAnswers as $answer) {
-    //     echo $answer . " ";
-    // }
+foreach ($quizzes as $quiz) {
+    if ($quiz->getAttribute('id') == $quiz_id) {
+        $questions = $quiz->getElementsByTagName("question");
+        foreach ($questions as $question) {
+            $answer = $question->getElementsByTagName('answer')->item(0)->nodeValue;
+            $correctAnswers[] = $answer;
+        }
+    }
 }
+
+if (isset($_POST['submit'])) {
+    $userAnswers = [];
+
+    // Loop through the submitted values and store them in an array
+    foreach ($_POST as $key => $value) {
+        if (strpos($key, 'flexRadioDefault') !== false) {
+            $userAnswers[] = $value;
+        }
+    }
+    // Evaluate the score
+    $score = 0;
+    foreach ($correctAnswers as $key => $value) {
+        if($userAnswers[$key] == $value) {
+            $score++;
+        }
+    }
+    
+    echo '<script>alert("' . $score . '/' . count($correctAnswers).'")</script>';
+}
+
 
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-    <form method="$_POST">
+    <form method="post">
         <?php
         foreach ($quizzes as $quiz) {
             $cntrForQuestions=0;
@@ -46,9 +55,7 @@ if(isset($_POST['submit'])) {
             if ($quiz->getAttribute('id') == $quiz_id) {
             $questions = $quiz->getElementsByTagName("question");
                 foreach ($questions as $question) {
-                    $answer = $question->getElementsByTagName('answer')->item(0)->nodeValue;
                     $cntrForQuestions++;
-                    $correctAnswers[$cntrForQuestions]=$answer;
                     echo '<div class="card my-3">
                             <div class="card-header">
                                 <h5 class="card-title">Question #1</h5></div>
@@ -58,11 +65,13 @@ if(isset($_POST['submit'])) {
                     echo '      </div>
                                 <ul class="list-group list-group-flush">';
                     $options = $question->getElementsByTagName('option');
+                    $cnrtForOptions=0;
                     foreach($options as $option){
                         $cnrtForOptions++;
                         echo '      <li class="list-group-item">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault'.$cntrForQuestions.'" id="flexRadioDefault'.$cntrForQuestions.$cnrtForOptions.'">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault'.$cntrForQuestions.'" 
+                                            id="flexRadioDefault'.$cntrForQuestions.$cnrtForOptions.'" value="'.$cnrtForOptions.'">
                                             <label class="form-check-label" for="flexRadioDefault'.$cntrForQuestions.$cnrtForOptions.'">';
                         echo $option->nodeValue;
                         echo '              </label>
@@ -78,6 +87,12 @@ if(isset($_POST['submit'])) {
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
     </form>
 </main>
+<script>
+function checkScore(score){
+    alert('Your score: ' + score + '/5');
+    window.location.href = 'lesson.php';
+}
+</script>
 <?php
 include_once '../includes/footer_in.php'
 ?>
