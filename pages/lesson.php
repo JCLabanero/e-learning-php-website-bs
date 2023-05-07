@@ -71,7 +71,8 @@ if (isset($_GET['id'])&&isset($_GET['lid'])) {
     <h4><?php echo $topic_node->title;?></h4>
     <p><?php echo $topic_node->content;?></p>
     <hr/>
-    <p></p>
+    <p>
+       
     <?php
         if ($prev_topic !== null) {
             echo '<a class="btn btn-outline-primary me-2" href="lesson.php?id='.$prev_topic.'&lid='.$lid.'">Previous</a>';
@@ -83,12 +84,13 @@ if (isset($_GET['id'])&&isset($_GET['lid'])) {
             echo "<a class='btn btn-primary me-2' href='answer.php?lid=$lid&id=$id'>Take Assessment</a>";
         }
         if ($next_lesson !== null) {
-            echo '</div><a class="btn btn-secondary me-2" href="lesson.php?id=1&lid='.$next_lesson.'">Next Lesson</a>';
+            echo '<a class="btn btn-secondary me-2" href="lesson.php?id=1&lid='.$next_lesson.'">Next Lesson</a>';
         }
         if ($prev_lesson !== null) {
             echo '<a class="btn btn-secondary me-2" href="lesson.php?id=1&lid='.$prev_lesson.'">Previous Lesson</a>';
         }
-    ?>
+    ?> 
+    </p>
 </main>
 
 <?php
