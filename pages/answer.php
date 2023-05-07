@@ -8,22 +8,47 @@ if (isset($_GET['id'])&&isset($_GET['lid'])) {
     $id = $_GET['id'];
     $lid = $_GET['lid'];
 }
-
+$correctAnswers=array();
 $quiz_id = $lid.$id;
 $quizzes = $xml->getElementsByTagName("quiz");
 
+if(isset($_POST['submit'])) {
+    echo "<h1>HEY IT WORKS</h1>";
+    // $answers = $_POST;
+    // $correctAnswers = array();
+
+    // // Loop over the submitted answers and check for correct ones
+    // foreach ($answers as $key => $value) {
+    //     if (is_numeric($key)) {
+    //         $questionId = substr($key, 0, 1);
+    //         $optionId = substr($key, 1, 1);
+    //         $correctAnswer = $quizzes[$quiz_id-1]['question'][$questionId-1]['answer'];
+    //         if ($value == $correctAnswer) {
+    //             $correctAnswers[] = $questionId.$optionId;
+    //         }
+    //     }
+    // }
+
+    // // Print the correct answers
+    // echo "Correct answers: ";
+    // foreach ($correctAnswers as $answer) {
+    //     echo $answer . " ";
+    // }
+}
+
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-    <form>
+    <form method="$_POST">
         <?php
         foreach ($quizzes as $quiz) {
-            $cntr=0;
-            $cntrForQuiz=0;
-            $cntrForOption=0;
+            $cntrForQuestions=0;
+            $cnrtForOptions=0;
             if ($quiz->getAttribute('id') == $quiz_id) {
             $questions = $quiz->getElementsByTagName("question");
                 foreach ($questions as $question) {
-                    $cntrForQuiz++;
+                    $answer = $question->getElementsByTagName('answer')->item(0)->nodeValue;
+                    $cntrForQuestions++;
+                    $correctAnswers[$cntrForQuestions]=$answer;
                     echo '<div class="card my-3">
                             <div class="card-header">
                                 <h5 class="card-title">Question #1</h5></div>
@@ -34,11 +59,11 @@ $quizzes = $xml->getElementsByTagName("quiz");
                                 <ul class="list-group list-group-flush">';
                     $options = $question->getElementsByTagName('option');
                     foreach($options as $option){
-                        $cntrForOption++;
+                        $cnrtForOptions++;
                         echo '      <li class="list-group-item">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault'.$cntrForQuiz.'" id="flexRadioDefault'.$cntrForQuiz.$cntrForOption.'">
-                                            <label class="form-check-label" for="flexRadioDefault'.$cntrForQuiz.$cntrForOption.'">';
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault'.$cntrForQuestions.'" id="flexRadioDefault'.$cntrForQuestions.$cnrtForOptions.'">
+                                            <label class="form-check-label" for="flexRadioDefault'.$cntrForQuestions.$cnrtForOptions.'">';
                         echo $option->nodeValue;
                         echo '              </label>
                                         </div>
@@ -50,9 +75,7 @@ $quizzes = $xml->getElementsByTagName("quiz");
             }
         }
         ?>
-        <!-- <button class="btn btn-outline-primary">Previous</button>
-        <button class="btn btn-primary">Next</button> -->
-        <button type="submit" class="btn btn-primary">Finish</button>
+        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
     </form>
 </main>
 <?php
