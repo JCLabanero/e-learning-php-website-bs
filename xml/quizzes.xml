@@ -39,5 +39,14 @@
             </options>
             <answer>3</answer>
         </question>
+        <question qid="3">
+            <text>22322141</text>
+            <options>
+                <option>Open-source language</option>
+                <option>Open-source script</option>
+                <option>Open-source general purpose scripting language</option>
+            </options>
+            <answer>3</answer>
+        </question>
     </quiz>
 </quizzes>

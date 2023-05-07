@@ -14,37 +14,50 @@ $quizzes = $xml->getElementsByTagName("quiz");
 
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-<?php
-foreach ($quizzes as $quiz) {
-    $cntr=0;
-    $cntrForQuiz=0;
-    $cntrForOption=0;
-    if ($quiz->getAttribute('id') == $quiz_id) {
-        $questions = $quiz->getElementsByTagName("question");
-        foreach ($questions as $question) {
-            $cntrForQuiz++;
-            echo '<div class="card my-3"><div class="card-header">
-                <h5 class="card-title">Question #1</h5></div>
-                <div class="card-body">';
-            echo $question->getElementsByTagName('text')->item(0)->nodeValue;
-    
-            echo '</div><ul class="list-group list-group-flush">';
-            $options = $question->getElementsByTagName('option');
-            foreach($options as $option){
-                $cntrForOption++;
-                echo '<li class="list-group-item"><div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault'.$cntrForQuiz.'" id="flexRadioDefault'.$cntrForQuiz.$cntrForOption.'">
-                    <label class="form-check-label" for="flexRadioDefault'.$cntrForQuiz.$cntrForOption.'">';
-                echo $option->nodeValue;
-                echo '</label></div></li>';
+    <form>
+        <?php
+        foreach ($quizzes as $quiz) {
+            $cntr=0;
+            $cntrForQuiz=0;
+            $cntrForOption=0;
+            if ($quiz->getAttribute('id') == $quiz_id) {
+            $questions = $quiz->getElementsByTagName("question");
+                foreach ($questions as $question) {
+                    $cntrForQuiz++;
+                    echo '<div class="card my-3">
+                            <div class="card-header">
+                                <h5 class="card-title">Question #1</h5></div>
+                                <div class="card-body">';
+                    echo $question->getElementsByTagName('text')->item(0)->nodeValue;
+
+                    echo '      </div>
+                                <ul class="list-group list-group-flush">';
+                    $options = $question->getElementsByTagName('option');
+                    foreach($options as $option){
+                        $cntrForOption++;
+                        echo '      <li class="list-group-item">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault'.$cntrForQuiz.'" id="flexRadioDefault'.$cntrForQuiz.$cntrForOption.'">
+                                            <label class="form-check-label" for="flexRadioDefault'.$cntrForQuiz.$cntrForOption.'">';
+                        echo $option->nodeValue;
+                        echo '              </label>
+                                        </div>
+                                    </li>';
+                    }
+                    echo '</ul>';
+                    echo '</div>';
+                }
             }
         }
-    }
-    echo '</ul>
-    </div>';
-}
+        ?>
+        <!-- <button class="btn btn-outline-primary">Previous</button>
+        <button class="btn btn-primary">Next</button> -->
+        <button type="submit" class="btn btn-primary">Finish</button>
+    </form>
+</main>
+<?php
+include_once '../includes/footer_in.php'
 ?>
-
                 <!-- <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Question</h1>
@@ -232,10 +245,3 @@ foreach ($quizzes as $quiz) {
                     </div>
                 </div> -->
                   
-                <button class="btn btn-outline-primary">Previous</button>
-                <button class="btn btn-primary">Next</button>
-                <button class="btn btn-primary" disabled>Finish</button>
-            </main>
-<?php
-include_once '../includes/footer_in.php'
-?>
