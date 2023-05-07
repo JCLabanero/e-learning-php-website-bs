@@ -137,33 +137,242 @@
             <answer>1</answer>
         </question>
     </quiz>
-    <quiz id="214">
-        <question qid="1">
-            <text>221?</text>
-            <options>
-                <option>Personal Home Page</option>
-                <option>Hypertext Preprocessor</option>
-                <option>Private Hosting Provider</option>
-            </options>
-            <answer>2</answer>
-        </question>
-        <question qid="2">
-            <text>223</text>
-            <options>
-                <option>Open-source language</option>
-                <option>Open-source script</option>
-                <option>Open-source general purpose scripting language</option>
-            </options>
-            <answer>3</answer>
-        </question>
-        <question qid="3">
-            <text>22322141</text>
-            <options>
-                <option>Open-source language</option>
-                <option>Open-source script</option>
-                <option>Open-source general purpose scripting language</option>
-            </options>
-            <answer>3</answer>
-        </question>
-    </quiz>
+        <quiz id="214">
+    <question qid="1">
+        <text>What are the starting and ending tags of PHP called?</text>
+        <options>
+            <option>Limited</option>
+            <option>Delimiters</option>
+            <option>Enclosers</option>
+        </options>
+        <answer>2</answer>
+    </question>
+    <question qid="2">
+        <text>What is the shorthand for the echo statement?</text>
+        <options>
+            <option>&lt;?=</option>
+            <option>&lt;?php echo print</option>
+            <option>&lt;?php print</option>
+        </options>
+        <answer>1</answer>
+    </question>
+    <question qid="3">
+        <text>What is the syntax for a single line comment?</text>
+        <options>
+            <option>/* */</option>
+            <option>/? ?/</option>
+            <option>// //</option>
+        </options>
+        <answer>3</answer>
+    </question>
+    <question qid="4">
+        <text>What is the syntax for a multiple line comment?</text>
+        <options>
+            <option>/* */</option>
+            <option>/? ?/</option>
+            <option>// //</option>
+        </options>
+        <answer>1</answer>
+    </question>
+    <question qid="5">
+        <text>PHP has the ability to cohabitate with?</text>
+        <options>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>HTML</option>
+        </options>
+        <answer>3</answer>
+    </question>
+    <question qid="6">
+        <text>What is the file extension for a pure php file?</text>
+        <options>
+            <option>.css</option>
+            <option>.php</option>
+            <option>.html</option>
+        </options>
+        <answer>2</answer>
+    </question>
+    <question qid="7">
+        <text>A symbol or name that stands for a value.</text>
+        <options>
+            <option>Variables</option>
+            <option>Functions</option>
+            <option>Tokens</option>
+        </options>
+        <answer>1</answer>
+    </question>
+    <question qid="8">
+        <text>Operators that work as basic math.</text>
+        <options>
+            <option>Incremental and Decremental Operators</option>
+            <option>Logical Operators</option>
+            <option>Arithmetic Operators</option>
+        </options>
+        <answer>3</answer>
+    </question>
+    <question qid="9">
+        <text>Operators that work logically.</text>
+        <options>
+            <option>Logical Operators</option>
+            <option>Arithmetic Operators</option>
+            <option>Array Operators</option>
+        </options>
+        <answer>1</answer>
+    </question>
+    <question qid="10">
+        <text>Operators that are used to compare</text>
+        <options>
+            <option>Array Operators</option>
+            <option>String Operators</option>
+            <option>Comparison Operators</option>
+        </options>
+        <answer>3</answer>
+    </question>
+    <question qid="11">
+        <text>Operators that are specifically for strings</text>
+        <options>
+            <option>String Operators</option>
+            <option>Assignment Operators</option>
+            <option>Incremental and Decremental Operators</option>
+        </options>
+        <answer>1</answer>
+    </question>
+    <question qid="12">
+        <text>Operators used for Increments and Decrements</text>
+        <options>
+            <option>Logical Operators</option>
+            <option>Incremental and Decremental Operators</option>
+            <option>Array Operators</option>
+        </options>
+        <answer>2</answer>
+    </question>
+    <question qid="13">
+        <text>Operator used to assign</text>
+        <options>
+            <option>Assignment Operator</option>
+            <option>Array Operator</option>
+            <option>String Operator</option>
+        </options>
+        <answer>1</answer>
+    </question>
+    <question qid="14">
+        <text>What is the syntax for Superglobals?</text>
+        <options>
+            <option>$globals</option>
+            <option>GLOBALS</option>
+            <option>$GLOBALS</option>
+        </options>
+        <answer>3</answer>
+    </question>
+    <question qid="15">
+        <text>What is the value that cannot be adjusted amid the script's execution?</text>
+        <options>
+            <option>Functions</option>
+            <option>Constants</option>
+            <option>Variables</option>
+        </options>
+        <answer>2</answer>
+    </question>
+</quiz>
+<quiz id="312">
+    <question qid="1">
+        <text>What type is the statement of the following code.&lt;br&gt;If (condition){output;} else{output;}</text>
+        <options>
+            <option>Switch Statement</option>
+            <option>If-else statement</option>
+            <option>If-elseif-else statement</option>
+        </options>
+        <answer>2</answer>
+    </question>
+    <question qid="2">
+        <text>What type is the statement of the following code.&lt;br&gt; If (condition) {output;} elseif (condition) {output;} else {output;}</text>
+        <options>
+            <option>If-elseif-else Statement</option>
+            <option>Switch Statement</option>
+            <option>If-else Statement</option>
+        </options>
+        <answer>1</answer>
+    </question>
+    <question qid="3">
+        <text>It is utilized to perform actions based on different conditions.</text>
+        <options>
+            <option>If-elseif-else Statement</option>
+            <option>Switch Statement</option>
+            <option>If-else Statement</option>
+        </options>
+        <answer>2</answer>
+    </question>
+    <question qid="4">
+        <text>What is the output of this For Loop Snippet?&lt;br&gt; for ($i=1; $i&lt;=4; $i++){echo $i . “,”;}</text>
+        <options>
+            <option>1,2,3,4</option>
+            <option>1, 2, 3, 4</option>
+            <option>1…2…3…4</option>
+        </options>
+        <answer>1</answer>
+    </question>
+    <question qid="5">
+        <text>What is the output of this For Loop Snippet?&lt;br&gt; for ($i=1; $i&lt;=5; $i++){echo $i . “,”;}</text>
+        <options>
+            <option>1, 2, 3, 4, 5</option>
+            <option>5, 4, 3, 2, 1</option>
+            <option>1,2,3,4,5</option>
+        </options>
+        <answer>3</answer>
+    </question>
+    <question qid="6">
+        <text>What is the output of this For Loop Snippet?&lt;br&gt; Echo “The numbers are: “&lt;br&gt; for ($i=1; $i&lt;=5; $i++){echo $i . “,”;}</text>
+        <options>
+            <option>The number are: 1,2,3,4,5</option>
+            <option>The numbers are: 1,2,3,4,5</option>
+            <option>The numbers are 12345</option>
+        </options>
+        <answer>2</answer>
+    </question>
+    <question qid="7">
+        <text>What is the output of this For Loop Snippet&lt;br&gt; Echo “The numbers are: “&lt;br&gt; for ($i=1; $i&lt;=5; $i++){echo $i . “ - ”;}</text>
+        <options>
+            <option>The numbers are: 1-2-3-4-5</option>
+            <option>The numbers are: 1 – 2 – 3 – 4 – 5 </option>
+            <option>The numbers are 1,2,3,4,5</option>
+        </options>
+        <answer>2</answer>
+    </question>
+    <question qid="8">
+        <text>What is the output of this For Each Loop&lt;br&gt; $colors = array{“Red”, “Blue”, “Green”};&lt;br&gt; foreach ($colors as $value){echo $value . “ ”;}</text>
+        <options>
+            <option>Red and Blue and Green</option>
+            <option>Red, Blue, Green</option>
+            <option>Red Blue Green</option>
+        </options>
+        <answer>3</answer>
+    </question>
+    <question qid="9">
+        <text>What is the output of this For Each Loop&lt;br&gt; $colors = array{“Violet”, “Blue”, “Green”};&lt;br&gt; foreach ($colors as $value){echo $value . “, ”;}</text>
+        <options>
+            <option>Violet, Blue, Green</option>
+            <option>Violet Blue Green</option>
+            <option>Green, Blue, Violet</option>
+        </options>
+        <answer>1</answer>
+    </question>
+    <question qid="10">
+        <text>What is the output of this For Each Loop&lt;br&gt; $colors = array{“Red”, “Blue”, “Green”};&lt;br&gt; foreach ($colors as $value){echo $value . “ + ”;}</text>
+        <options>
+            <option>Red and Blue and Green</option>
+            <option>Red + Blue + Green</option>
+            <option> Red plus Blue plus Green</option>
+        </options>
+        <answer>2</answer>
+    </question>
+    <question qid="11">
+        <text>What is the output of this For Each Loop&lt;br&gt; $colors = array{“Red”, “Blue”, “Green”};&lt;br&gt; foreach ($colors as $value){echo $value . “ and ”;}</text>
+        <options>
+            <option>Red and Blue and Green</option>
+            <option>Red + Blue + Green</option>
+            <option>Red plus Blue plus Green</option>
+        </options>
+        <answer>1</answer>
+    </question>
+</quiz>
 </quizzes>

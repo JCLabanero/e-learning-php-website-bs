@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
                     $cntrForQuestions++;
                     echo '<div class="card my-3">
                             <div class="card-header">
-                                <h5 class="card-title">Question #1</h5></div>
+                                <h5 class="card-title">Question #'.$cntrForQuestions.'</h5></div>
                                 <div class="card-body">';
                     echo $question->getElementsByTagName('text')->item(0)->nodeValue;
 
