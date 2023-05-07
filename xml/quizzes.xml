@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<quizzes>
+    <quiz id="11">
+        <question qid="1">
+            <text>What does PHP stand for?</text>
+            <options>
+                <option>Personal Home Page</option>
+                <option>Hypertext Preprocessor</option>
+                <option>Private Hosting Provider</option>
+            </options>
+            <answer>2</answer>
+        </question>
+        <question qid="2">
+            <text>PHP is a widely-used _____</text>
+            <options>
+                <option>Open-source language</option>
+                <option>Open-source script</option>
+                <option>Open-source general purpose scripting language</option>
+            </options>
+            <answer>3</answer>
+        </question>
+    </quiz>
+    <quiz id="23">
+        <question qid="1">
+            <text>221?</text>
+            <options>
+                <option>Personal Home Page</option>
+                <option>Hypertext Preprocessor</option>
+                <option>Private Hosting Provider</option>
+            </options>
+            <answer>2</answer>
+        </question>
+        <question qid="2">
+            <text>223</text>
+            <options>
+                <option>Open-source language</option>
+                <option>Open-source script</option>
+                <option>Open-source general purpose scripting language</option>
+            </options>
+            <answer>3</answer>
+        </question>
+    </quiz>
+</quizzes>
