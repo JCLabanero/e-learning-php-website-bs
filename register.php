@@ -47,19 +47,19 @@
                                         </div>
                                         <div class="row g-1">
                                         <div class="col-sm-8 mb-2">
-                                            <label for="exampleInputText" class="form-label">Email address</label>
+                                            <label for="exampleInputText" class="form-label">Nickname</label>
                                             <input type="text" class="form-control" id="exampleInputText"
-                                                aria-describedby="emailHelp" placeholder="Nickname" name="nName">
+                                                aria-describedby="nicknameHelp" placeholder="Nickname" name="nName">
                                         </div>
                                         <div class="col-sm-4 mb-2">
                                             <label for="exampleInputNumber" class="form-label">Age</label>
                                             <input type="number" class="form-control" id="exampleInputNumber"
-                                                aria-describedby="emailHelp" placeholder="Age" name="age">
+                                                aria-describedby="ageHelp" placeholder="Age" name="age">
                                         </div>
                                         <div class="mb-2">
                                             <label for="exampleInputPassword1" class="form-label">Upload Photo:</label>
                                             <input type="file" class="form-control" id="exampleInputPassword1"
-                                                aria-describedby="emailHelp" required placeholder="Upload Photo" name="image">
+                                                aria-describedby="photoHelp" required placeholder="Upload Photo" name="image">
                                         </div>
                                         </div>
                                         <button type="submit" name="add" class="btn btn-primary">Register</button>

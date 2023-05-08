@@ -43,7 +43,8 @@ if ($emailExists) {
     $account = $xml->createElement("account");
     $img = $_FILES['image']['name'];
     $img_path = "../massets/images/".$img;
-    if (move_uploaded_file($_FILES['image']['tmp_name'],$img_path)) {
+
+    if (move_uploaded_file($_FILES['image']['tmp_name'][0],$img_path)) {
         echo 'Image uploaded and saved successfully';
     } else {
         echo 'Error saving image';
