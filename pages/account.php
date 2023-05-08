@@ -10,6 +10,8 @@ $fname = $account->fname;
 $lname = $account->lname;
 $nname = $account->nName;
 $age = $account->age;
+$username = $account->username;
+$dp = $account->imgPath;
 
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
@@ -20,28 +22,27 @@ $age = $account->age;
             <div class="btn-group me-2">
                 <button type="button" class="btn btn-sm btn-outline-secondary">Edit Info</button>
             </div>
-            <button type="button" class="btn btn-sm btn-outline-danger">
+            <a href="account_delete.php" class="btn btn-sm btn-outline-danger">
                 <span data-feather="calendar" class="align-text-bottom"></span>
                 Delete Account
-            </button>
+            </a>
         </div>
     </div>
     <div class="card mb-3 border-0 rounded-0" style="max-width: 100%;">
         <div class="row g-0">
             <div class="col-auto">
-                <img src="https://picsum.photos/200" class="float-start" alt="...">
+                <?php echo '<img src="'.$dp.'" class="float-start" alt="...">'?>
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h3><?php echo $email?></h3>
-                    <h3><?php echo $fname.' '.$lname?></h3>
-                    <h3><?php echo $nname?></h3>
-                    <p><?php echo $age?></p>
+                    <h3>Email: <?php echo $email?></h3>
+                    <h3>Full Name: <?php echo $fname.' '.$lname?></h3>
+                    <h3>Nickname: <?php echo $nname?></h3>
+                    <h3>Age: <?php echo $age?></h3>
                 </div>
             </div>
             <div class="card-body border-0 pt-0">
-                <h3>Links</h3>
-                <p>Balitang balita sa radyong sira</p>
+                <h3>Username: <?php echo $username?></h3>
             </div>
         </div>
     </div>

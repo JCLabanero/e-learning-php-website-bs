@@ -62,7 +62,7 @@
                                                 aria-describedby="emailHelp" required placeholder="Upload Photo" name="image">
                                         </div>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Register</button>
+                                        <button type="submit" name="add" class="btn btn-primary">Register</button>
                                     </div>
                                 </div>
                             </div>

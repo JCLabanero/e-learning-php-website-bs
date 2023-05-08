@@ -1,20 +1,3 @@
 <?xml version="1.0"?>
 <accounts>
-    <account>
-        <email>admin@test.com</email>
-        <password>827ccb0eea8a706c4c34a16891f84e7b</password>
-        <fname>Jomar</fname>
-        <lname>Javier</lname>
-        <nName>Jovier</nName>
-        <age>11</age>
-    </account>
-    <account>
-        <email>test@test</email>
-        <password>827ccb0eea8a706c4c34a16891f84e7b</password>
-        <fname>admin</fname>
-        <lname>admin</lname>
-        <nName>admin</nName>
-        <age>11</age>
-    </account>
-<account><email>johncarlolabanero@yahoo.com</email><password>827ccb0eea8a706c4c34a16891f84e7b</password><fname/>Labanero<lname/><nname>Carlo</nname><age>20</age></account>
-<account><username>333</username><email>johncarlolabanero@gmail.com</email><password>827ccb0eea8a706c4c34a16891f84e7b</password><fname>John Carlo</fname><lname>Labanero</lname><nName>131314</nName><imagePath>../massets/images/</imagePath><age>21</age></account></accounts>
+<account><username>carlo</username><email>johncarlolabanero@gmail.com</email><password>81dc9bdb52d04dc20036dbd8313ed055</password><fname>John Carlo</fname><lname>Labanero</lname><nName>john</nName><age>21</age><imgPath>../massets/images/shhes.png</imgPath></account></accounts>
