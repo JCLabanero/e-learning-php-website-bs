@@ -15,35 +15,6 @@ $dp = $account->imgPath;
 
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-    <div
-        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Account</h1>
-        <div class="btn-toolbar mb-2 mb-md-0">
-            <a href="account_update.php" type="button" class="btn btn-sm btn-outline-secondary me-2">Edit Info</a>
-            <a href="account_delete.php" class="btn btn-sm btn-outline-danger">
-                <span data-feather="calendar" class="align-text-bottom"></span>
-                Delete Account
-            </a>
-        </div>
-    </div>
-    <div class="card mb-3 border-0 rounded-0" style="max-width: 100%;">
-        <div class="row g-0">
-            <div class="col-auto">
-                <?php echo '<img src="'.$dp.'" class="float-start" alt="...">'?>
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h3>Email: <?php echo $email?></h3>
-                    <h3>Full Name: <?php echo $fname.' '.$lname?></h3>
-                    <h3>Nickname: <?php echo $nname?></h3>
-                    <h3>Age: <?php echo $age?></h3>
-                </div>
-            </div>
-            <div class="card-body border-0 pt-0">
-                <h3>Username: <?php echo $username?></h3>
-            </div>
-        </div>
-    </div>
     <!-- Show this if edit info true -->
     <!-- <div class="card mb-3 border-0 rounded-0" style="max-width: 100%;">
         <div class="row g-0">
@@ -66,6 +37,57 @@ $dp = $account->imgPath;
             </div>
         </div>
     </div> -->
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-6 mt-5 mb-lg-0">
+        <div class="card mb-3" style="border-radius: .5rem;">
+          <div class="row g-0">
+            <div class="col-md-4 gradient-custom text-center text-white"
+              style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+              <h5>Marie Horwitz</h5>
+              <p>Web Designer</p>
+              <i class="far fa-edit mb-5"></i>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-4">
+                <h6>Information</h6>
+                <hr class="mt-0 mb-2">
+                <div class="row pt-1">
+                    <h6>Email</h6>
+                    <p class="text-muted"><?php echo $email?></p>
+                </div>
+                <div class="row pt-1">
+                    <h6>Username</h6>
+                    <p class="text-muted"><?php echo $username?></p>
+                </div>
+                <div class="row pt-1">
+                    <h6>Full name</h6>
+                    <p class="text-muted"><?php echo $fname.' '.$lname?></p>
+                </div>
+                <h6>Other Information</h6>
+                <hr class="mt-0 mb-4">
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h6>Age</h6>
+                    <p class="text-muted"><?php echo $age?></p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h6>Nickname</h6>
+                    <p class="text-muted"><?php echo $nname?></p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-start">
+                  <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
+                  <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
+                  <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </main>
 <?php
 include_once '../includes/footer_in.php'
