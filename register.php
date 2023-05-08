@@ -35,6 +35,11 @@
                                             <input type="password" class="form-control" id="exampleInputPassword1"
                                                 aria-describedby="emailHelp" placeholder="Password" name="password">
                                         </div>
+                                        <div class="mb-2">
+                                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                aria-describedby="emailHelp" required placeholder="Confirm Password" name="c_password">
+                                        </div>
                                         <div class="input-group mb-2">
                                         <span class="input-group-text"><p class="m-0 d-none d-sm-flex">First and last name</p><p class="m-0 d-flex d-sm-none">CN</p></span>
                                             <input type="text" aria-label="First name" class="form-control" placeholder="First Name" name="fname">
@@ -51,7 +56,11 @@
                                             <input type="number" class="form-control" id="exampleInputNumber"
                                                 aria-describedby="emailHelp" placeholder="Age" name="age">
                                         </div>
-
+                                        <div class="mb-2">
+                                            <label for="exampleInputPassword1" class="form-label">Upload Photo:</label>
+                                            <input type="file" class="form-control" id="exampleInputPassword1"
+                                                aria-describedby="emailHelp" required placeholder="Upload Photo" name="image">
+                                        </div>
                                         </div>
                                         <button type="submit" class="btn btn-primary">Register</button>
                                     </div>
