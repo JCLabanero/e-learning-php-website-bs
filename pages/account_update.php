@@ -15,7 +15,7 @@
                 <div class="card mx-auto" style="max-width: 800px;">
                     <div class="row g-0">
                         <div class="col-md-5 pt-2 pt-md-5">
-                        <?php echo '<img src="'.$row->imgPath.'" class="float-start" alt="...">'?>
+                        <?php echo '<img src="../massets/images/'.$row->imgPath.'" class="float-start" alt="Image couldn\'t display">'?>
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
@@ -25,7 +25,7 @@
                                     <div class="input-group mb-0">
                                         <span class="input-group-text" id="basic-addon1">@</span>
                                         <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" name="email" value="<?php echo $row->email; ?>">     
+                                            aria-describedby="emailHelp" name="email" value="<?php echo $row->email; ?>" required>     
                                     </div>
                                     
                                 </div>
@@ -38,8 +38,8 @@
                                 
                                 <div class="input-group mb-2">
                                 <span class="input-group-text"><p class="m-0 d-none d-sm-flex">First and last name</p><p class="m-0 d-flex d-sm-none">CN</p></span>
-                                    <input type="text" aria-label="First name" class="form-control" placeholder="First Name" name="fname">
-                                    <input type="text" aria-label="Last name" class="form-control"  placeholder="Last Name" name="lname">
+                                    <input type="text" aria-label="First name" class="form-control" placeholder="First Name" name="fname" required>
+                                    <input type="text" aria-label="Last name" class="form-control"  placeholder="Last Name" name="lname" required>
                                 </div>
                                 <div class="row g-1">
                                 <div class="col-sm-8 mb-2">
@@ -60,17 +60,17 @@
                                 <div class="mb-2">
                                     <label for="exampleInputPassword1" class="form-label">Old Password</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1"
-                                        aria-describedby="emailHelp" placeholder="Password" name="o_password">
+                                        aria-describedby="emailHelp" placeholder="Password" name="o_password" required>
                                 </div>
                                 <div class="mb-2">
                                     <label for="exampleInputPassword2" class="form-label">New Password</label>
                                     <input type="password" class="form-control" id="exampleInputPassword2"
-                                        aria-describedby="emailHelp" placeholder="Password" name="password">
+                                        aria-describedby="emailHelp" placeholder="Password" name="password" required>
                                 </div>
                                 <div class="mb-2">
                                     <label for="exampleInputPassword3" class="form-label">Confirm New Password</label>
                                     <input type="password" class="form-control" id="exampleInputPassword3"
-                                        aria-describedby="emailHelp" placeholder="Confirm Password" name="c_password">
+                                        aria-describedby="emailHelp" placeholder="Confirm Password" name="c_password" required>
                                 </div>
 
                                 </div>

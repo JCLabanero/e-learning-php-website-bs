@@ -1,34 +1,26 @@
 <?php
 	session_start();
-    $is_updated=false;
 	if(isset($_POST['update'])){
-		$accounts = simplexml_load_file('../xml/accounts.xml');
-		foreach($accounts->account as $account){
-
-			if($account->username == $_POST['username']){
-                if($account->password!=$_POST['o_password']){
-                    $is_updated=false;
-                    echo '<script>alert("Account updated")</script>';
-                    break;
-                }
-				$account->email = $_POST['email'];
-				$account->fname = $_POST['fname'];
-				$account->lname = $_POST['lname'];
-				$account->nName = $_POST['nName'];
-				$account->age = $_POST['age'];
-				$account->imgPath = $_FILES['image']['name'];
-				$account->password = $_POST['password'];
-                $is_updated=true;
-				break;
-			}
-		}
-        if($is_updated==true){
-            echo '<script>alert("Account updated")</script>';
-            file_put_contents('../xml/accounts.xml', $accounts->asXML());
-            $_SESSION['message'] = 'Member updated successfully';
-            header('location: ../pages/account_update.php');
+		$xml = simplexml_load_file('../xml/accounts.xml');
+        $accounts = $xml->xpath("/accounts/account[email='".$_POST['email']."']");
+        $old_password_hashed=md5($_POST['o_password']);
+        if($_POST['password']!=$_POST['c_password']){
+            echo '<script>alert("Confirm password not matched")</script>';
+            return;
+        }
+        if($accounts[0]->password==$old_password_hashed){
+            $accounts[0]->email = $_POST['email'];
+            $accounts[0]->fname = $_POST['fname'];
+            $accounts[0]->lname = $_POST['lname'];
+            $accounts[0]->nName = $_POST['nName'];
+            $accounts[0]->age = $_POST['age'];
+            $accounts[0]->imgPath = $_FILES['image']['name'];
+            $accounts[0]->password = md5($_POST['password']);
+            $xml->asXML('../xml/accounts.xml');
+            header('location: ../pages/account.php');
         } else {
-            echo '<script>alert("Update failed")</script>';
+            header('location: ../pages/account_update.php');
+            return;
         }
 	}
 ?>

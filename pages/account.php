@@ -45,7 +45,7 @@ $dp = $account->imgPath;
         </div>
     </div>
     <!-- Show this if edit info true -->
-    <div class="card mb-3 border-0 rounded-0" style="max-width: 100%;">
+    <!-- <div class="card mb-3 border-0 rounded-0" style="max-width: 100%;">
         <div class="row g-0">
             <div class="col-auto">
                 <img src="https://picsum.photos/200" class="float-start" alt="...">
@@ -65,7 +65,7 @@ $dp = $account->imgPath;
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Links"></textarea>
             </div>
         </div>
-    </div>
+    </div> -->
 </main>
 <?php
 include_once '../includes/footer_in.php'
