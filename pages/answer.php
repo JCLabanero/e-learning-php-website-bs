@@ -26,7 +26,7 @@ foreach ($quizzes as $quiz) {
 
 if (isset($_POST['submit'])) {
     $userAnswers = [];
-
+    
     // Loop through the submitted values and store them in an array
     foreach ($_POST as $key => $value) {
         if (strpos($key, 'flexRadioDefault') !== false) {

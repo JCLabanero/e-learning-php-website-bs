@@ -1,5 +1,16 @@
 <?php
-include_once '../includes/header_in.php'
+include_once '../includes/header_in.php';
+
+$xml = simplexml_load_file('../xml/accounts.xml');
+
+$account = $xml->account[0];
+
+$email = $account->email;
+$fname = $account->fname;
+$lname = $account->lname;
+$nname = $account->nName;
+$age = $account->age;
+
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     <div
@@ -22,11 +33,10 @@ include_once '../includes/header_in.php'
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h3>Full Name</h3>
-                    <h3>Contact</h3>
-                    <p>Balitang balita sa radyong sira</p>
-                    <h3>Biography</h3>
-                    <p>Balitang balita sa radyong sira</p>
+                    <h3><?php echo $email?></h3>
+                    <h3><?php echo $fname.' '.$lname?></h3>
+                    <h3><?php echo $nname?></h3>
+                    <p><?php echo $age?></p>
                 </div>
             </div>
             <div class="card-body border-0 pt-0">
