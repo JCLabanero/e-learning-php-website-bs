@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col w-50 mx-auto">
-                    <form method="post" action="php/create_new_account.php">
+                    <form method="post" action="php/create_new_account.php" enctype="multipart/form-data">
                         <div class="card mx-auto" style="max-width: 800px;">
                             <div class="row g-0">
                                 <div class="col-md-5 pt-2 pt-md-5">
