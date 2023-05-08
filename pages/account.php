@@ -15,7 +15,16 @@ $dp = $account->imgPath;
 
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-    <!-- Show this if edit info true -->
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <a href="account.php" class="h2 text-dark" style="text-decoration:none;">Account</a>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <a href="account_update.php" type="button" class="btn btn-sm btn-outline-secondary me-2">Edit Info</a>
+            <a href="account_delete.php" class="btn btn-sm btn-outline-danger">
+                <span data-feather="calendar" class="align-text-bottom"></span>
+                Delete Account
+            </a>
+        </div>
+    </div>
     <!-- <div class="card mb-3 border-0 rounded-0" style="max-width: 100%;">
         <div class="row g-0">
             <div class="col-auto">
@@ -38,7 +47,7 @@ $dp = $account->imgPath;
         </div>
     </div> -->
     <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col col-xl-6 mt-5 mb-lg-0">
+      <div class="col col-xl-6 mb-lg-0">
         <div class="card mb-3" style="border-radius: .5rem;">
           <div class="row g-0">
             <div class="col-md-4 gradient-custom text-center text-white"

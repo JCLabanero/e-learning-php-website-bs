@@ -10,6 +10,16 @@
     }
 ?>
 <main class="col">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <a href="account.php" class="h2 text-dark" style="text-decoration:none;">Account</a>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <a href="account_update.php" type="button" class="btn btn-sm btn-outline-secondary me-2">Edit Info</a>
+            <a href="account_delete.php" class="btn btn-sm btn-outline-danger">
+                <span data-feather="calendar" class="align-text-bottom"></span>
+                Delete Account
+            </a>
+        </div>
+    </div>
         <div class="col w-auto w-sm-50 w-50 mx-auto mt-5">
             <form method="post" action="../php/update_this_account.php" enctype="multipart/form-data">
                 <div class="card mx-auto" style="max-width: 800px;">
